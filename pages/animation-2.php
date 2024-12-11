@@ -15,7 +15,7 @@
 <body class="animation-2">
 <div class="wrapper">
 
-	<main class="main js-trigger">
+	<main class="main">
 		<section class="about-company js-about-company">
 			<div class="about-company__container">
 				<h2 class="about-company__title js-title-section">
@@ -55,7 +55,7 @@
 
         <section class="interactive">
             <div class="interactive__container">
-                <div class="interactive-card" style="background-image: url('../assets/img/hero-intro.jpg')"> 
+                <div class="interactive-card" style="background-image: url('../assets/img/hero-intro.jpg')">
                     <div class="interactive-card__title">
                         Керуємо <br>
                         НЕРУХОМІСТЮ <br>
@@ -71,5 +71,6 @@
 <script src="../assets/libs/gsap/SplitText.min.js"></script>
 <script src="../assets/js/common.min.js"></script>
 <script src="../assets/js/section-animation_2.min.js"></script>
+<script src="../assets/js/emotion_css.js"></script>
 </body>
 </html>

@@ -3,9 +3,6 @@
   \*******************************************************************************************************************************************************************************************************************************/
 /*images*/
 .hero-intro {
-  bottom: 0;
-  left: 0;
-  z-index: 99;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -22,8 +19,6 @@
   @media only screen and (max-width: 767px) {
     .hero-intro {
       padding: 3rem 0; } }
-  .animation-2 .hero-intro {
-    position: absolute; }
   .hero-intro__title {
     font-family: "PP Object Sans", sans-serif;
     font-weight: 700;

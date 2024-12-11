@@ -39,6 +39,9 @@ window.addEventListener("DOMContentLoaded", () => {
         top: 0;
         overflow: hidden;
         min-height: 100vh;
+        .dark-mode & {
+            background-color: #000;
+        }
     `;
     const aboutCompanyTitleCss = css`
         padding: ${pxToRem(48)};
@@ -48,6 +51,9 @@ window.addEventListener("DOMContentLoaded", () => {
         letter-spacing: -0.02em;
         text-transform: uppercase;
         color: #000;
+        .dark-mode & {
+        color: #fff;
+        }
         @media (max-width: 1199px) {
           padding: ${pxToRem(48)} 0 0;
         }
@@ -102,6 +108,9 @@ window.addEventListener("DOMContentLoaded", () => {
         line-height: 150%;
         letter-spacing: -0.02em;
         color: #000;
+        .dark-mode & {
+            color: #fff;
+        }
         @media (max-width: 767px) {
           margin-top: ${pxToRem(24)};
         }

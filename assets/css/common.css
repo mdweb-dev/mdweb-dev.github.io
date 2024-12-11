@@ -93,6 +93,18 @@ a {
   .wrapper .main {
     flex: 1; }
 
+.switch-mode {
+  position: fixed;
+  top: 1.5rem;
+  right: 1.5rem;
+  padding: 0.3125rem;
+  border-radius: 0.3125rem;
+  background-color: var(--color-white); }
+  @media only screen and (max-width: 767px) {
+    .switch-mode {
+      top: 0.9375rem;
+      right: 0.9375rem; } }
+
 @font-face {
   font-family: "PP Object Sans";
   src: url("../../assets/fonts/PPObjectSans-BlackSlanted.woff") format("woff");

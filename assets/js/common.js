@@ -5,6 +5,7 @@
 window.addEventListener("DOMContentLoaded", function () {
   document.body.classList.add("light-mode");
   var themeSwitch = document.createElement("button");
+  themeSwitch.classList.add('switch-mode');
   themeSwitch.textContent = "Змінити тему";
   document.body.appendChild(themeSwitch);
   themeSwitch.addEventListener("click", function () {

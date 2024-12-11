@@ -1,6 +1,44 @@
-# Webpack starter
+# Test Gsap & Emotion
+- використовував webpack для збірки та початкової верстки
+- gsap та emotion робив import із npm
+- по компонентам не розбив крім файлів php секції та елементи
+- якщо потрібно використовувати react чи vue тоді логічно розиби по компонентам
 
-## Instruction
+## більше детальніше можем зідзвонитися
+- t.me/mdweb
+- mdweb.com.ua@gmail.com
+
+## бібліотеки
+- emotion js
+- GSAP
+- ScrollTrigger
+- SplitText
+
+## REM
+для гнучкоскі використовував замість пікселів rem через mixin
+
+## Emotion
+- Сайт зараз легенько стилізований через `css`
+- анімація вся на `gsap`
+- `emotion` - додав для прикладу не на всі елемнти, більше цікавіше реалізація на реальному проекті
+
+
+## Animation 1
+- page/animation-1.php
+- src/scripts/section/animation_1.js
+- src/styles - файли зі стилями
+- emotion стилі без react src/scripts/animation-css.js
+- якщо стилі emotion відключити сторінка буде стилізована звичайними стилями
+- почав спочатку робити одну анімації, 
+більше детальніше переглянув сайт приклад і переробив
+
+## Animation 2
+- page/animation-2.php
+- src/scripts/section/animation_2.js
+- src/styles - файли зі стилями
+- emotion стилі без react src/scripts/animation-css.js
+- якщо стилі emotion відключити сторінка буде стилізована звичайними стилями
+- більш цікавіша анімація як на сайті прикладі
 
 1. Install and run Open server;
 2. Update **'webpack'** name in the proxy settings to your folder name. Open `webpack.config.js` change the `proxy` in the `settings`.

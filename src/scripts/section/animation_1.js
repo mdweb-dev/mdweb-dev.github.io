@@ -1,4 +1,3 @@
-import { css } from '@emotion/css';
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -38,28 +37,7 @@ window.addEventListener("DOMContentLoaded", () => {
         }, 1);
     }
 
-
-    const heroIntroCss = css`
-        height: 100vh;
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-    `;
-
-    const heroIntroTitleCss = css`
-        font-family: "PP Object Sans", sans-serif;
-        font-weight: 700;
-        font-size: 72px;
-        line-height: 1.25;
-        letter-spacing: -0.02em;
-        text-transform: uppercase;
-        color: #fff;
-    `;
-
     const heroIntro = document.querySelector('.hero-intro');
-    const heroIntroTitle = document.querySelector('.hero-intro__title');
-    //heroIntro.className = heroIntroCss;
-    //heroIntroTitle.className = heroIntroTitleCss;
 
     const timeLine = gsap.timeline();
     timeLine.fromTo(heroIntro, {
@@ -85,7 +63,7 @@ window.addEventListener("DOMContentLoaded", () => {
                 trigger: jsAboutCompany,
                 //scrub: 3,
                 start: "top center",
-                toggleActions: "play reset play reset",
+                //toggleActions: "play reset play reset",
             }
         }).fromTo('.js-title-section .line', {
             clipPath: 'polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%)',

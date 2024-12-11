@@ -59,6 +59,8 @@
 </div>
 
 	<script src="../assets/libs/gsap/SplitText.min.js"></script>
-<script src="../assets/js/section-animation_1.min.js"></script>
+    <script src="../assets/js/common.min.js"></script>
+    <script src="../assets/js/section-animation_1.min.js"></script>
+    <script src="../assets/js/emotion_css.min.js"></script>
 </body>
 </html>

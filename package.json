@@ -1,0 +1,54 @@
+{
+  "name": "webpack-workflow",
+  "version": "1.0.0",
+  "description": "A Webpack Workflow automation.",
+  "main": "webpack.config.js",
+  "keywords": [],
+  "author": "MDWeb",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "ISC",
+  "scripts": {
+    "prod": "webpack --mode development",
+    "route": "browser-sync start --config bs-config.js",
+    "watch": "webpack --watch --mode development"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.23.9",
+    "@babel/preset-env": "^7.23.9",
+    "autoprefixer": "^10.4.17",
+    "babel-loader": "^9.1.3",
+    "browser-sync": "^2.0.1",
+    "browser-sync-webpack-plugin": "^2.3.0",
+    "chokidar": "^3.6.0",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "^12.0.2",
+    "css-loader": "^6.10.0",
+    "css-minimizer-webpack-plugin": "^6.0.0",
+    "file-loader": "^6.2.0",
+    "image-minimizer-webpack-plugin": "^4.0.0",
+    "image-webpack-loader": "^8.1.0",
+    "imagemin-webpack-plugin": "^2.4.2",
+    "mini-css-extract-plugin": "^2.8.0",
+    "node-sass": "^9.0.0",
+    "postcss": "^8.4.35",
+    "postcss-loader": "^8.1.0",
+    "sass-loader": "^14.1.0",
+    "style-loader": "^3.3.4",
+    "svg-spritemap-webpack-plugin": "^4.5.0",
+    "svgo-loader": "^4.0.0",
+    "terser-webpack-plugin": "^5.3.10",
+    "webpack": "^5.90.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.0.1",
+    "xml2js": "^0.6.2"
+  },
+  "dependencies": {
+    "@emotion/css": "^11.13.5",
+    "cheerio": "^1.0.0-rc.12",
+    "gsap": "^3.12.5",
+    "jquery": "^3.7.1"
+  }
+}

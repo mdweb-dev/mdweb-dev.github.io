@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* 
+font-family: "Poppins", serif;
+*/
+
+:root {
+    --color-white: #fff;
+    --color-red: #e50914
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+
+body {
+    background-color: #222;
+    color: var(--color-white);
+}
+
+.wrppaer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    grid-gap: 50px;
+    min-height: 100svh;
+}
+
+.button {
+    position: relative;
+    overflow: hidden;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 0px;
+    min-height: 80px;
+    padding: 10px 30px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    border: none;
+    color: var(--color-red);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    transition: .3s;
+    transition-delay: 1s;
+}
+
+.button:hover {
+    color: var(--color-white);
+    cursor: pointer;
+    filter: drop-shadow(0 0 10px var(--color-red))
+            drop-shadow(0 0 30px var(--color-red));
+    letter-spacing: 0.2em;
+}
+
+.button span {
+    position: absolute;
+    z-index: -1;
+    width: 2px;
+    height: 100%;
+    background-color: var(--color-red);
+    transition: transform .2s ease-in-out;
+    transform-origin: bottom;
+    transform: scale(0);
+}
+.button:hover span {
+    transform: scale(1);
+    transform-origin: top;
+}

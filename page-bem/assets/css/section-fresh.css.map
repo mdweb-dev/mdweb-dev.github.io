@@ -1,0 +1,1 @@
+{"version":3,"file":"./assets/css/section-fresh.css","mappings":";;;AAAA;;;EAGE","sources":["webpack:///./src/styles/section/fresh.scss"],"sourcesContent":["/**\r\n@import \"../common/mixins\";\r\n@import \"../common/variable\";\r\n */"],"names":[],"sourceRoot":""}

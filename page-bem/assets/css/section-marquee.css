@@ -1,0 +1,28 @@
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/marquee.scss ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/**
+@import "../common/mixins";
+@import "../common/variable";
+ */
+.marquee__swiper .swiper-wrapper {
+  -webkit-transition-timing-function: linear !important;
+  transition-timing-function: linear !important; }
+  .marquee__swiper .swiper-wrapper .swiper-slide {
+    width: auto;
+    max-width: 300px;
+    max-height: 300px;
+    aspect-ratio: 1;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 0; }
+    .marquee__swiper .swiper-wrapper .swiper-slide img {
+      width: 100%;
+      max-width: 300px;
+      -o-object-fit: contain;
+      object-fit: contain;
+      aspect-ratio: 1; }
+
+
+/*# sourceMappingURL=section-marquee.css.map*/

@@ -1,0 +1,1220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Styles for libs -->
+    <link rel="stylesheet" href="assets/libs/swiper/swiper.min.css">
+
+    <!-- Styles for frontend -->
+    <link rel="stylesheet" href="assets/css/common.css" />
+
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <a href="#" class="header-logo">
+                            <div class="header-logo__wrapper">
+                                <picture class="header-logo__logo">
+                                    <img src="assets/img/logo-header.svg" alt="logo header">
+                                </picture>
+                                <picture class="header-logo__flag">
+                                    <img src="assets/img/flag-header.svg" alt="flag header">
+                                </picture>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="header__main js-menu-clone">
+                        <div class="header__top">
+                            <nav class="header__main-menu menu-main">
+                                <ul>
+                                    <li><a class="active" href="#">Wholesale</a></li>
+                                    <li><a href="#">Recipes</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+
+                        <div class="header__bottom">
+                            <nav class="header__catalog menu-catalog">
+                                <ul>
+                                    <li><a href="#">belgian pearl sugar</a></li>
+                                    <li><a href="#">liege waffle mix</a></li>
+                                    <li><a href="#">liege waffle maker</a></li>
+                                    <li><a href="#">speciality ingredients</a></li>
+                                </ul>
+                            </nav>
+
+                            <div class="header__right">
+                                <div class="header__search">
+                                    <form action="#" class="search-form">
+                                        <input type="text" placeholder="Search">
+                                        <button type="submit">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#search"></use>
+                                            </svg>
+                                        </button>
+                                    </form>
+                                </div>
+                                <div class="header__basket">
+                                    <button class="btn-basket">
+                                        <svg class="icon">
+                                            <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                                <div class="header__user">
+                                    <button class="btn-sign">
+                                        <svg class="icon">
+                                            <use href="assets/icons/sprite.svg#user"></use>
+                                        </svg>
+                                        <span>Sign in</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="button-menu"></button>
+
+                    <div class="header-mobile js-menu-inner"></div>
+                </div>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__wrapper">
+                        <div class="hero__picture">
+                            <picture>
+                                <img src="assets/img/hero-img-1-@2x.jpg" alt="hero img 1">
+                            </picture>
+                        </div>
+                        <div class="hero__main">
+                            <div class="hero__swiper swiper js-hero-swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="sugar-card">
+                                            <div class="sugar-card__main">
+                                                <div class="sugar-card__title">
+                                                    PEARL
+                                                    SUGAR
+                                                </div>
+                                                <div class="sugar-card__content content-typ">
+                                                    <p>
+                                                        But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound.
+                                                    </p>
+                                                </div>
+                                                <div class="sugar-card__action">
+                                                    <a href="#" class="btn-rect btn-rect_yellow">
+                                                        Shop now
+                                                        <svg class="icon">
+                                                            <use href="assets/icons/sprite.svg#arrow-right"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <picture class="sugar-card__picture">
+                                                <img src="assets/img/hero-img-2.png" alt="sugar 1">
+                                            </picture>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="sugar-card">
+                                            <div class="sugar-card__main">
+                                                <div class="sugar-card__title">
+                                                    test title
+                                                </div>
+                                                <div class="sugar-card__content content-typ">
+                                                    <p>
+                                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum, odio, officiis. Deleniti ducimus necessitatibus odio perferendis, perspiciatis tempora voluptatibus! Aperiam blanditiis cupiditate dolor, et fugiat illum non repudiandae sapiente sed.
+                                                    </p>
+                                                </div>
+                                                <div class="sugar-card__action">
+                                                    <a href="#" class="btn-rect btn-rect_yellow">
+                                                        Shop now
+                                                        <svg class="icon">
+                                                            <use href="assets/icons/sprite.svg#arrow-right"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                            <picture class="sugar-card__picture">
+                                                <img src="assets/img/test-imh-2.png" alt="sugar 2">
+                                            </picture>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="hero__pagination js-hero-pagination"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="baker">
+                <div class="baker__switcher-buttons js-switcher-scroll">
+                    <button class="btn-switch js-switcher-button active" data-related-class="baker-1">
+                        Home baker
+                    </button>
+                    <button class="btn-switch js-switcher-button" data-related-class="baker-2">
+                        <picture>
+                            <img src="assets/img/tab-icon.png" alt="baker-2">
+                        </picture>
+                        professional
+                    </button>
+                </div>
+                <div class="baker__container">
+                    <div class="baker__content content-switch js-switcher-content baker-1 active fade-in">
+                        <div class="baker__swiper js-baker-swiper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-1.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/test-imh-2.png" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg?v=1#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-3.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-4.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="baker__prev js-baker-prev">
+                                <svg class="icon">
+                                    <use href="assets/icons/sprite.svg?v=2#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <button class="baker__next js-baker-next">
+                                <svg class="icon">
+                                    <use href="assets/icons/sprite.svg?v=2#arrow-left"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="baker__content content-switch js-switcher-content baker-2">
+                        <div class="baker__swiper js-baker-swiper">
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-3.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-4.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-1.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/test-imh-2.png" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg?v=1#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-3.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="swiper-slide">
+                                        <div class="baker-card">
+                                            <div class="baker-card__wrapper">
+                                                <div class="baker-card__picture">
+                                                    <a href="#">
+                                                        <picture>
+                                                            <img src="assets/img/baker-img-4.jpg" alt="1">
+                                                        </picture>
+                                                    </a>
+                                                    <div class="baker-card__discount label-discount">
+                                                        -25%
+                                                    </div>
+                                                    <div class="baker-card__fav">
+                                                        <button class="btn-favorite">
+                                                            <svg class="icon">
+                                                                <use href="assets/icons/sprite.svg#favorite"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                                <div class="baker-card__inner">
+                                                    <div class="baker-card__title">
+                                                        HVD-A57-Liege-Waffle-Iron
+                                                    </div>
+                                                    <div class="baker-card__row row-1">
+                                                        <div class="baker-card__model">
+                                                            model wedceat
+                                                        </div>
+                                                        <div class="baker-card__old-price">
+                                                            $1,800,oo
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-2">
+                                                        <div class="baker-card__rating">
+                                                            <div class="rating-short">
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                                <svg class="icon">
+                                                                    <use href="assets/icons/sprite.svg#star"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <span>(34)</span>
+                                                        </div>
+                                                        <div class="baker-card__new-price">
+                                                            $1,401,6o
+                                                        </div>
+                                                    </div>
+                                                    <div class="baker-card__row row-3">
+                                                        <div class="baker-card__buy-text">
+                                                            <p>Buy 4 or more $1,200,00</p>
+                                                            <p>Limit 10 per order</p>
+                                                        </div>
+                                                        <div class="baker-card__buy-btn">
+                                                            <form action="#">
+                                                                <input type="text" hidden>
+                                                                <button class="btn-addcart">
+                                                                    <svg class="icon">
+                                                                        <use href="assets/icons/sprite.svg?v=1#basket"></use>
+                                                                    </svg>
+                                                                </button>
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <button class="baker__prev js-baker-prev">
+                                <svg class="icon">
+                                    <use href="assets/icons/sprite.svg?v=2#arrow-left"></use>
+                                </svg>
+                            </button>
+                            <button class="baker__next js-baker-next">
+                                <svg class="icon">
+                                    <use href="assets/icons/sprite.svg?v=2#arrow-left"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="recipes">
+                <div class="flag-section" style="background-image: url('assets/img/section-flag.svg')"></div>
+
+                <div class="recipes__container">
+                    <div class="recipes__headline">
+                        <h2 class="recipes__title heading-h2">
+                            Authentic <mark>recipes</mark>
+                        </h2>
+                        <div class="recipes__description">
+                            Try one of our pearl sugar recipe at the comfort of your home.
+                            In the kitchen with waffle pantry.
+                        </div>
+                    </div>
+
+                    <div class="recipes__group">
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="assets/img/recipe-img-1-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="assets/img/recipe-img-2-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="recipe-card">
+                            <div class="recipe-card__wrapper">
+                                <div class="recipe-card__picture">
+                                    <a href="#">
+                                        <picture class="">
+                                            <img src="assets/img/recipe-img-3-@2x.jpg" alt="#">
+                                        </picture>
+                                    </a>
+                                </div>
+
+                                <div class="recipe-card__inner">
+                                    <div class="recipe-card__rating">
+                                        <div class="rating-short">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg#star"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="recipe-card__title">
+                                        traditional liege waffle
+                                    </a>
+                                    <div class="recipe-card__time">
+                                        <div class="label-icon">
+                                            <svg class="icon">
+                                                <use href="assets/icons/sprite.svg?v=1#oclock"></use>
+                                            </svg>
+                                            <span>45 min</span>
+                                        </div>
+                                    </div>
+                                    <div class="recipe-card__excerpt">
+                                        Try one of our pearl sugar recipe at the comfort of your home. In the kitchen with waffle pantry.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recipes__action">
+                        <a href="#" class="btn-more">
+                            <span>discover more recipes</span>
+                            <i>
+                                <svg class="icon">
+                                    <use href="assets/icons/sprite.svg?v=1#arrow-right"></use>
+                                </svg>
+                            </i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="marquee">
+                <div class="marquee__swiper swiper js-marquee-swiper" data-reverse="false" data-speed="6000">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-1-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-2-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-3-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-4-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-5-@2x.jpg" alt="#">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/marquee-img-6-@2x.jpg" alt="#">
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer__container">
+                @mdweb
+            </div>
+        </footer>
+    </div>
+
+    <!-- Scripts for libs -->
+    <script src="assets/libs/swiper/swiper.min.js"></script>
+
+    <!-- Scripts for frontend -->
+    <script src="assets/js/common.js"></script>
+</body>
+</html>

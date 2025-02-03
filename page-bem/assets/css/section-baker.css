@@ -1,0 +1,51 @@
+/*!**************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/baker.scss ***!
+  \**************************************************************************************************************************************************************************************************************************/
+/**
+@import "../common/mixins";
+@import "../common/variable";
+ */
+.baker {
+  background-color: #f8f8f8;
+  padding-bottom: 70px; }
+  .baker__switcher-buttons {
+    max-width: 1920px;
+    margin-inline: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .baker__switcher-buttons button, .baker__switcher-buttons .btn-switch {
+      width: 100%;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+  .baker__content {
+    padding: 72px 0; }
+
+.hero + .baker {
+  margin-top: 35px; }
+
+.baker-card {
+  position: relative;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.1);
+  -webkit-transition: .3s;
+  transition: .3s; }
+  .baker-card__picture {
+    position: relative;
+    background-color: grey; }
+  .baker-card__discount {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 5px 0 5px 0; }
+  .baker-card__fav {
+    position: absolute;
+    top: 25px;
+    right: 22px;
+    z-index: 2; }
+
+
+/*# sourceMappingURL=section-baker.css.map*/

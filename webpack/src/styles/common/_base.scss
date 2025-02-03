@@ -1,0 +1,62 @@
+html {
+	-webkit-tap-highlight-color: transparent !important;
+	font-size: 16px;
+
+	@include min-tablet {
+		font-size: 1.3vw;
+	}
+	@include min-laptop {
+		font-size: 1.098vw;
+	}
+}
+
+body {
+	font-family: $font-family;
+	color: $colorDark;
+	line-height: 1.25;
+}
+
+[class*="__container"] {
+	width: 100%;
+	max-width: r(1440 + 80);
+	padding-inline: r(40);
+	margin-inline: auto;
+	@include max-tablet {
+		padding-inline: r(15);
+	}
+}
+
+.main-menu {
+	display: flex;
+	list-style: none;
+}
+
+a {
+	color: $colorDark;
+}
+
+.icon {
+	fill: currentColor;
+}
+
+.wrapper {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	.main {
+		flex: 1;
+	}
+}
+
+.switch-mode {
+	position: fixed;
+	top: r(24);
+	right: r(24);
+	padding: r(5);
+	border-radius: r(5);
+	background-color: $colorWhite;
+	@include max-tablet {
+		top: r(15);
+		right: r(15);
+	}
+}

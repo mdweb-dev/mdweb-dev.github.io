@@ -1,0 +1,99 @@
+@import "../common/mixins";
+@import "../common/variable";
+
+.about-company {
+  position: sticky;
+  top: 0;
+  overflow: hidden;
+  min-height: 100vh;
+  &__title {
+    padding: r(48);
+    font-family: $font-family;
+    font-weight: 700;
+    font-size: r(40);
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #000;
+    @include max-laptop {
+      padding: r(48) 0 0;
+    }
+    @include max-tablet {
+      font-size: r(28);
+    }
+  }
+  &__wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    @include max-laptop {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__picture {
+    padding: r(48);
+    font-size: 0;
+    @include max-laptop {
+      padding: r(24) 0;
+    }
+    img {
+      width: 100%;
+      transform: scale(5);
+    }
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: r(48);
+    border-left: r(1) solid #ccc;
+    @include max-laptop {
+      padding: r(24) 0;
+      border-left: none;
+      border-top: r(1) solid #ccc;
+    }
+  }
+  &__count {
+    font-family: $font-family;
+    font-weight: 900;
+    font-size: r(80);
+    line-height: 125%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #71c575;
+    @include max-tablet {
+      font-size: r(48);
+    }
+  }
+  &__about {
+    font-family: $font-family;
+    font-weight: 400;
+    font-size: r(16);
+    line-height: 150%;
+    letter-spacing: -0.02em;
+    color: #000;
+    @include max-tablet {
+      margin-top: r(24);
+    }
+    p,ul,ol,table,blockquote{
+      margin-bottom: r(15);
+    }
+    ul,ol{
+      padding-left: r(30);
+    }
+    *:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  &__mask {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: flex-end;
+    padding: r(48);
+    width: 100%;
+    height: 100vh;
+    z-index: 10;
+    pointer-events: none;
+  }
+}

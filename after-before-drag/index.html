@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Before After Example</title>
+    <style>
+        .before-after {
+            position: relative;
+            width: 100%;
+            max-width: 700px;
+            height: 350px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .before-after__img {
+            width: 100%;
+            height: 100%;
+            background-color: red;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .before-after__img.img-2 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 2;
+            clip-path: polygon(0 0, 50% 0, 50% 100%, 0% 100%);
+            background-color: blue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+        }
+
+        .js-drag-path {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            width: 30px;
+            height: 100%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.5);
+            cursor: ew-resize;
+            z-index: 3;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #fff;
+            font-size: 24px;
+            user-select: none;
+            touch-action: none;
+        }
+
+        @media (max-width: 768px) {
+            .js-drag-path {
+                width: 40px;
+                font-size: 28px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="before-after">
+        <div class="before-after__img img-1">img1</div>
+        <div class="before-after__img img-2 js-clip-path">
+            img2
+        </div>
+        <div class="js-drag-path">|</div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const clipPathElement = document.querySelector('.js-clip-path');
+            const dragElement = document.querySelector('.js-drag-path');
+            const container = document.querySelector('.before-after');
+            let isDragging = false;
+
+            // Початок перетягування
+            const startDragging = (e) => {
+                e.preventDefault(); 
+                isDragging = true;
+                document.body.style.cursor = 'ew-resize';
+                dragElement.setPointerCapture(e.pointerId); 
+            };
+
+            const stopDragging = () => {
+                if (isDragging) {
+                    isDragging = false;
+                    document.body.style.cursor = 'default';
+                }
+            };
+
+            const onDrag = (e) => {
+                if (!isDragging) return;
+
+                const clientX = e.clientX;
+                const containerRect = container.getBoundingClientRect();
+                let offsetX = clientX - containerRect.left;
+
+                offsetX = Math.max(0, Math.min(offsetX, containerRect.width));
+
+                const clipValue = (offsetX / containerRect.width) * 100;
+
+                clipPathElement.style.clipPath = `polygon(0 0, ${clipValue}% 0, ${clipValue}% 100%, 0% 100%)`;
+                dragElement.style.left = `${clipValue}%`;
+            };
+
+            dragElement.addEventListener('pointerdown', startDragging);
+            document.addEventListener('pointerup', stopDragging);
+            document.addEventListener('pointermove', onDrag);
+
+            container.addEventListener('pointerdown', (e) => {
+                e.preventDefault();
+            });
+        });
+    </script>
+</body>
+</html>

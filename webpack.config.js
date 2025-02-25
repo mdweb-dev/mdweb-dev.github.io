@@ -134,7 +134,7 @@ const EntryJs = jsFiles.reduce((entries, file) => {
 const settings = {
 	host: 'localhost',
 	port: 5500,
-	proxy: 'http://localhost:81/chatStop/'
+	proxy: 'http://localhost:81/mdveb-dev/'
 };
 
 module.exports = (env) => [

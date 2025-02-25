@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        /* Стилі для форми */
+        #uploadForm {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            background-color: #f9f9f9;
+            border-radius: 5px;
+            max-width: 400px;
+        }
+
+        input[type="file"] {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"],
+        input[type="button"] {
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        input[type="submit"]:hover,
+        input[type="button"]:hover {
+            background-color: #0059b3;
+        }
+
+        /* Стилі для таблиці */
+        #fileTable {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        #fileTable th,
+        #fileTable td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ccc;
+        }
+
+        #fileTable th {
+            background-color: #f2f2f2;
+        }
+
+        /* Стилі для прогрес-барів */
+        progress {
+            width: 100%;
+            height: 20px;
+        }
+
+        /* Стилі для відсотків завантаження */
+        span.percentage {
+            font-weight: bold;
+            margin-left: 10px;
+        }
+
+        /* Стилі для кнопки "Відмінити" */
+        button {
+            padding: 5px 10px;
+            background-color: #ff3333;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ff0000;
+        }
+
+        /* Стилі для кнопки "Відправити" */
+        #sendButton {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            display: none; /* Починаємо з прихованої кнопки */
+            transition: background-color 0.3s;
+        }
+
+        #sendButton:hover {
+            background-color: #0059b3;
+        }
+    </style>
+</head>
+<body>
+
+<form id="uploadForm" enctype="multipart/form-data">
+    <input type="file" name="file[]" multiple>
+    <input type="submit" value="Завантажити">
+    <input type="button" value="Відправити" id="sendButton" style="display: none;">
+</form>
+
+<table id="fileTable">
+    <thead>
+    <tr>
+        <th>Назва файлу</th>
+        <th>Розмір файлу</th>
+        <th>Progress</th>
+        <th>% завантаження</th>
+        <th>Дії</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+
+<script src="form.js"></script>
+</body>
+</html>

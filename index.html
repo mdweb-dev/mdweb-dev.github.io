@@ -1,28 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Front-end - MDWeb DEV</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="format-detection" content="telephone=no">
-</head>
-<body>
-<div class="wrapper">
-    <main class="main">
-        <section class="index-menu">
-            <div class="index-menu__container">
-                <ul>
-                    <li><a href="webpack/pages/animation-1.html">Animation 1 CSS/JS/GSAP</a></li>
-                    <li><a href="webpack/pages/animation-2.html">Animation 2 CSS/JS/GSAP</a></li>
-                    <li><a href="netflix-button/index.html">Netflix button hover CSS/JS</a></li>
-                    <li><a href="image-slider/index.html">Slider Effect CSS/JS</a></li>
-                    <li><a href="page-bem/index.html">Page BEM CSS/JS</a></li>
-                    <li><a href="resize-banner/index.html">Resize banner CSS</a></li>
-                </ul>
-                @mdweb
-            </div>
-        </section>
-    </main>
-</div>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <title>Front-end - MDWeb DEV</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="format-detection" content="telephone=no" />
+
+        <link rel="stylesheet" href="./assets/css/common.min.css" />
+        <link rel="stylesheet" href="./assets/css/section-mdweb_hero.min.css" />
+    </head>
+    <body>
+        <div class="wrapper" data-barba="wrapper">
+            <header class="header">
+                <div class="header__container">
+                    <div class="header__wrapper">
+                        <div class="header__logo">logo</div>
+                        <nav class="header__navbar navbar-header">
+                            <ul>
+                                <li><a href="#hero" class="active">Home</a></li>
+                                <li>
+                                    <a href="#services">Services</a>
+                                </li>
+                                <li>
+                                    <a href="#portfolio">Portfolio</a>
+                                </li>
+                                <li>
+                                    <a href="#testimonials">
+                                </li>
+                                <li class="dropdown">
+                                    <a href="#"
+                                        ><span>Menu</span>
+                                        <i
+                                            class="bi bi-chevron-down dropdown-indicator"
+                                        ></i
+                                    ></a>
+                                    <ul>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Why Us?</a></li>
+                                        <li>
+                                            <a href="#"
+                                                >Terms &amp; Conditions</a
+                                            >
+                                        </li>
+                                        <li><a href="#">Privacy Policy</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#recent-posts" class="">News</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <main class="main" data-barba="container">
+                <section
+                    class="mdweb-hero"
+                    style="background-image: url('./assets/img/hero-bg.jpg')"
+                >
+                    <div class="mdweb-hero__particles" id="particles-js"></div>
+                    <div class="mdweb-hero__container">
+                        <div class="mdweb-hero__wrapper">
+                            <h1 class="mdweb-hero__name js-split-heading">Dmytro Melnyk</h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="index-menu">
+                    <div class="index-menu__container">
+                        <ul>
+                            <li>
+                                <a href="webpack/pages/animation-1.html"
+                                    >Animation 1 CSS/JS/GSAP</a
+                                >
+                            </li>
+                            <li>
+                                <a href="webpack/pages/animation-2.html"
+                                    >Animation 2 CSS/JS/GSAP</a
+                                >
+                            </li>
+                            <li>
+                                <a href="netflix-button/index.html"
+                                    >Netflix button hover CSS/JS</a
+                                >
+                            </li>
+                            <li>
+                                <a href="image-slider/index.html"
+                                    >Slider Effect CSS/JS</a
+                                >
+                            </li>
+                            <li>
+                                <a href="page-bem/index.html"
+                                    >Page BEM CSS/JS</a
+                                >
+                            </li>
+                            <li>
+                                <a href="resize-banner/index.html"
+                                    >Resize banner CSS</a
+                                >
+                            </li>
+                        </ul>
+                        @mdweb
+                    </div>
+                </section>
+            </main>
+        </div>
+
+        <div class="custom-cursor js-custom-cursor"></div>
+
+        <script src="./assets/libs/barba/core.js"></script>
+        <script src="./assets/libs/gsap/gsap.min.js"></script>
+        <script src="./assets/libs/gsap/ScrollTrigger.min.js"></script>
+        <script src="./assets/libs/gsap/SplitText.min.js"></script>
+        <script src="./assets/libs/particles/particles.min.js"></script>
+        <script src="./assets/js/common.min.js"></script>
+    </body>
 </html>

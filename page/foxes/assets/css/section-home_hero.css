@@ -1,0 +1,76 @@
+/*!******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/home_hero.scss ***!
+  \******************************************************************************************************************************************************************************************************************************/
+/*images*/
+.home-hero {
+  position: relative;
+  padding-bottom: 3.125rem; }
+  .home-hero:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    display: block;
+    height: 15.625rem;
+    width: 100%;
+    background-color: #F7F7F7; }
+  .home-hero__display {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    min-height: 50rem;
+    padding: 0.9375rem;
+    -o-border-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) 1;
+    border-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(0, 0, 0, 0.4))) fill 1;
+    border-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)) fill 1;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .home-hero__main {
+    position: relative;
+    z-index: 2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    max-width: 52.8125rem;
+    text-align: center;
+    line-height: 1;
+    color: var(--color-white); }
+  .home-hero__title {
+    font-weight: bold;
+    font-size: 5.1875rem; }
+    @media only screen and (max-width: 767px) {
+      .home-hero__title {
+        font-size: 3rem; } }
+  .home-hero__description {
+    max-width: 32.25rem;
+    margin-top: 3.125rem;
+    font-size: 1.6875rem;
+    line-height: 1; }
+  .home-hero__action {
+    margin-top: 3.125rem; }
+
+.home-hero_short .home-hero__display {
+  min-height: 25rem; }
+
+.home-hero + section {
+  background-color: #F7F7F7; }
+
+
+/*# sourceMappingURL=section-home_hero.css.map*/

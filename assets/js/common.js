@@ -36,21 +36,24 @@ window.addEventListener("DOMContentLoaded", function () {
   });
 
   /** barba js */
-  barba.init({
-    transitions: [{
-      name: "opacity-transition",
-      leave: function leave(data) {
-        return gsap.to(data.current.container, {
-          opacity: 0
-        });
-      },
-      enter: function enter(data) {
-        return gsap.from(data.next.container, {
-          opacity: 0
-        });
-      }
-    }]
-  });
+  function barbaInit() {
+    barba.init({
+      transitions: [{
+        name: "opacity-transition",
+        leave: function leave(data) {
+          return gsap.to(data.current.container, {
+            opacity: 0
+          });
+        },
+        enter: function enter(data) {
+          return gsap.from(data.next.container, {
+            opacity: 0
+          });
+        }
+      }]
+    });
+  }
+  //barbaInit();
 
   // --x, --y position
   var pos = document.documentElement;

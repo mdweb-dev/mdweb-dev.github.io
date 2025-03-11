@@ -1,0 +1,23 @@
+/*!********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/about_owner.scss ***!
+  \********************************************************************************************************************************************************************************************************************************/
+/*images*/
+.about-owner {
+  padding: 6.25rem 0; }
+  @media only screen and (max-width: 767px) {
+    .about-owner {
+      padding: 3.125rem 0; } }
+  .about-owner__title {
+    color: var(--color-orange); }
+  .about-owner__group {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2.5rem;
+    margin-top: 6.25rem; }
+    @media only screen and (max-width: 767px) {
+      .about-owner__group {
+        margin-top: 3.125rem;
+        grid-template-columns: 1fr; } }
+
+
+/*# sourceMappingURL=section-about_owner.css.map*/

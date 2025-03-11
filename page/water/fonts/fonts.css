@@ -1,0 +1,80 @@
+/* GTWalsheimPro */
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: local('GTWalsheimProLight'),
+        url('GTWalsheimProLight.woff2') format('woff2'),
+        url('GTWalsheimProLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: local('GTWalsheimProRegular'),
+    url('GTWalsheimProRegular.woff2') format('woff2'),
+    url('GTWalsheimProRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: local('GTWalsheimProMedium'),
+    url('GTWalsheimProMedium.woff2') format('woff2'),
+    url('GTWalsheimProMedium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'GTWalsheimPro';
+    src: local('GTWalsheimProBold'),
+    url('GTWalsheimProBold.woff2') format('woff2'),
+    url('GTWalsheimProBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* FarnhamDisplay */
+@font-face {
+    font-family: 'FarnhamDisplay';
+    src: local('FarnhamDisplay Light'), local('FarnhamDisplay-Light'),
+    url('FarnhamDisplay-Light.woff2') format('woff2'),
+    url('FarnhamDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FarnhamDisplay';
+    src: local('FarnhamDisplay LightItal'), local('FarnhamDisplay-LightItal'),
+    url('FarnhamDisplay-LightItal.woff2') format('woff2'),
+    url('FarnhamDisplay-LightItal.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'FarnhamDisplay';
+    src: local('FarnhamDisplay Medium'), local('FarnhamDisplay-Medium'),
+        url('FarnhamDisplay-Medium.woff2') format('woff2'),
+        url('FarnhamDisplay-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'FarnhamDisplay';
+    src: local('FarnhamDisplay MediumItal'), local('FarnhamDisplay-MediumItal'),
+        url('FarnhamDisplay-MediumItal.woff2') format('woff2'),
+        url('FarnhamDisplay-MediumItal.woff') format('woff');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+

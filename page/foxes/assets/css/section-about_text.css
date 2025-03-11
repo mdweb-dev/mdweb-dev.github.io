@@ -1,0 +1,62 @@
+/*!*******************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/about_text.scss ***!
+  \*******************************************************************************************************************************************************************************************************************************/
+/*images*/
+.about-text {
+  padding-top: 6.25rem;
+  padding-bottom: 6.25rem; }
+  @media only screen and (max-width: 767px) {
+    .about-text {
+      padding: 3.125rem 0; } }
+  .about-text__wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 1.25rem;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    @media only screen and (max-width: 767px) {
+      .about-text__wrapper {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        grid-gap: 2.1875rem; } }
+  .about-text__picture {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    max-width: 42.9375rem;
+    font-size: 0; }
+    .about-text__picture picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      font-size: 0; }
+    .about-text__picture img {
+      width: 100%; }
+  .about-text__right {
+    width: 100%;
+    max-width: 42.8125rem; }
+  .about-text__title {
+    color: var(--color-orange); }
+  .about-text__content {
+    margin-top: 2.1875rem; }
+  .about-text__action {
+    margin-top: 2.1875rem; }
+
+@media only screen and (min-width: 768px) {
+  .about-text_reverse .about-text__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse; } }
+
+
+/*# sourceMappingURL=section-about_text.css.map*/

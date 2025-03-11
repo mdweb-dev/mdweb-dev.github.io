@@ -58,11 +58,13 @@
     transition: 3s cubic-bezier(0.645, 0.045, 0.355, 1);
     -webkit-transform: scale(0.5);
     -ms-transform: scale(0.5);
-    transform: scale(0.5); }
+    transform: scale(0.5);
+    opacity: 0; }
     .is-visible .mdweb-hero__name {
       -webkit-transform: scaleX(1);
       -ms-transform: scaleX(1);
-      transform: scaleX(1); }
+      transform: scaleX(1);
+      opacity: 1; }
 
 
 /*# sourceMappingURL=section-mdweb_hero.css.map*/

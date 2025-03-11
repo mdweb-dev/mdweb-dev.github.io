@@ -1,12 +1,10 @@
-@import "../common/mixins";
-@import "../common/variable";
-
 .header {
   position: fixed;
   top: 0;
   left: 0;
   z-index: 999;
   width: 100%;
+  display: none;
   &__container {}
   &__wrapper {
     display: flex;

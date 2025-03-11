@@ -1,0 +1,2903 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.3.6,
+* Autoprefixer: v10.3.1
+* Browsers: last 4 version
+*/
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+ul, ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+    color: #6665DD;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+a:hover {
+    color: #0cbfbf;
+}
+img {
+    max-width: 100%;
+}
+input,
+button,
+textarea{
+    outline: none;
+    font-family: 'Inter', sans-serif;
+}
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+button:hover {
+    cursor: pointer;
+}
+p {
+    margin: 14px 0;
+}
+.button {
+    background: #0045FF;
+    border: 1px solid #0045FF;
+    border-radius: 6px;
+    color: #fff;
+    padding: 0 15px;
+    display: block;
+    font-weight: bold;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.button:hover {
+    background: #fff;
+    color: #0045FF;
+    text-decoration: none;
+    cursor: pointer;
+}
+.clearfix:after {
+    content: "";
+    clear: both;
+    display: block;
+}
+
+/* wp html tag content */
+.content a {
+    color: #6665DD;
+    text-decoration: underline;
+
+}
+.content a:hover {
+    text-decoration: none;
+    color: #0cbfbf;;
+}
+.content h1,
+.content h2,
+.content h3,
+.content h4 {
+    margin-bottom: 15px;
+}
+.content ol,
+.content ul {
+    padding-left: 40px;
+    margin-bottom: 15px;
+}
+.content p {
+    margin-bottom: 15px;
+}
+.content figure {
+    margin-bottom: 15px;
+}
+.content blockquote {
+    background: #f9fafc;
+    padding: 15px;
+    margin: 0 0 15px 15px;
+    border-left: 3px solid #182947;
+}
+.content blockquote p {}
+.content blockquote cite {
+    background: #fff;
+    padding: 15px;
+    display: block;
+}
+.content table {
+    border-collapse: collapse;
+    width: 100%;
+}
+.content th,
+.content td {
+    border: 1px solid;
+    padding: 5px 10px;
+}
+/* end wp styles*/
+
+h1 {
+    font-family: 'FarnhamDisplay';
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+h1 i {
+    font-family: 'FarnhamDisplay LightItal';
+    font-weight: 300;
+    font-style: italic;
+}
+h2 {
+    font-family: 'FarnhamDisplay';
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 1.24;
+}
+h2 i {
+    font-family: 'FarnhamDisplay LightItal';
+    font-weight: 300;
+    font-style: italic;
+}
+h3 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1.75;
+}
+h4 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 1.66;
+}
+html {
+    font-size: 1.389vw;
+}
+body {
+    font-size: 20px;
+    color: #0D2330;
+    font-family: 'GTWalsheimProLight';
+    font-weight: 300;
+    font-style: normal;
+    line-height: 1.75;
+    padding: 73px 0 0 0;
+    overflow-x: hidden;
+    cursor: none;
+}
+body.page-home {
+    padding: 0;
+}
+.description {
+    line-height: 1.75;
+}
+.container {
+    max-width: 1368px;
+    margin: 0 auto;
+}
+
+.header {
+    position: fixed;
+    background: #F4F8FF;
+    top: 0;
+    width: 100%;
+    z-index: 50;
+    padding: 12px 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.header.active {
+    background: #fff;
+    padding: 5px 0;
+}
+.logo-top {
+    display: block;
+    margin: 0px 0 0 68px;
+    float: left;
+}
+.logo-top img {}
+.header-nav {}
+.header-shop {
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    text-align: center;
+    min-width: 81px;
+    max-width: 81px;
+    height: 35px;
+    background: url("../img/shop.svg") no-repeat center;
+    text-transform: uppercase;
+    color: #0D2330;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+    font-size: 14px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    font-family: 'GTWalsheimProMedium';
+    -webkit-transform: translate(-50%, 0px);
+    -ms-transform: translate(-50%, 0px);
+    transform: translate(-50%, 0px);
+}
+.header-shop:hover {
+    background: url("../img/shop-h.svg") no-repeat center;
+    color: #fff;
+}
+.user-box {
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 4px 68px 0 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.user-box li {
+    margin: 0 0 0 25px;
+}
+.user-box li a {
+}
+.ico-profile {
+    display: inline-block;
+    background: url("../img/account.svg") no-repeat center bottom;
+    width: 15px;
+    height: 24px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.ico-profile:hover {
+    background: url("../img/account_2.svg") no-repeat center bottom;
+}
+.ico-basket {
+    display: inline-block;
+    background: url("../img/cart_1.svg") no-repeat center bottom;
+    width: 20px;
+    height: 27px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.ico-basket:hover {
+    background: url("../img/cart_3.svg") no-repeat center bottom;
+}
+.ico-bars {
+    margin: 0 0 0 13px;
+}
+.ico-bars:before,
+.ico-bars:after {
+    content: "";
+    display: block;
+    background: url("../img/menu1.svg") no-repeat center;
+    width: 18px;
+    height: 1px;
+    text-transform: uppercase;
+    color: #0D2330;
+    letter-spacing: 1.4px;
+    font-weight: bold;
+    font-size: 14px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: relative;
+    margin: 5px 0;
+}
+.menu-button {
+    text-transform: uppercase;
+    color: #0D2330;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 14px;
+}
+.menu-button:hover .ico-bars:before,
+.menu-button:hover .ico-bars:after {
+    background: url("../img/menu2.svg") no-repeat center;
+    height: 3px;
+}
+
+.bg-head {
+    background: #F4F8FF;
+    padding: 0 0 343px 0;
+    background: url("../img/wasser-aroma.png") no-repeat bottom, #F4F8FF;
+    background-size: contain;
+}
+.bg-head:after {
+    content: "";
+    display: block;
+    background: url("../img/wasser-aroma.png") no-repeat bottom;
+}
+.bublle-wiewasser {
+    background: #F4F8FF;
+    height: 100vh;
+    position: relative;
+}
+.bublle-wiewasser .container {
+    position: relative;
+}
+.title-wiewasser {
+    font-size: 8.85rem;
+    font-size: 177px;
+    font-family: 'FarnhamDisplay';
+    text-align: center;
+    /*left: 177px;*/
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+.title-wiewasser__tofrom1 {
+    position: absolute;
+    width: 100%;
+    transition: 2s;
+}
+.title-wiewasser__tofrom2 {
+    position: absolute;
+    width: 100%;
+    transition: 2s;
+    opacity: 0;
+}
+.wiewasser-cursor {
+    background: url("../img/droplet-big.png") no-repeat center;
+    width: 317px;
+    height: 295px;
+    position: fixed;
+    transition: all 0s ease-in-out, top 0s, left 0s;
+    display: none;
+    z-index: 51;
+    margin: -188px 0 0 -159px;
+}
+#scene,
+.scene {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9;
+    transition: 3s;
+}
+.bublle-cir {
+    position: absolute;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+}
+@-webkit-keyframes bublle-float {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    100% {
+
+        -webkit-transform: translateY(0px);
+
+        transform: translateY(0px);
+    }
+}
+@keyframes bublle-float {
+    0% {
+        -webkit-transform: translateY(0px);
+        transform: translateY(0px);
+    }
+    50% {
+        opacity: 1;
+        -webkit-transform: translateY(-100px);
+        transform: translateY(-100px);
+    }
+    100% {
+
+        -webkit-transform: translateY(0px);
+
+        transform: translateY(0px);
+    }
+}
+@-webkit-keyframes rotate {
+    from {
+        -webkit-transform: translateY(0px) ;
+        transform: translateY(0px) ;
+    }
+    to {
+        -webkit-transform: translateY(-70vh) scale(1.5) skew(10deg, 5deg) rotate(360deg);
+        transform: translateY(-70vh) scale(1.5) skew(10deg, 5deg) rotate(360deg);
+    }
+
+}
+@keyframes rotate {
+    from {
+        -webkit-transform: translateY(0px) ;
+        transform: translateY(0px) ;
+    }
+    to {
+        -webkit-transform: translateY(-70vh) scale(1.5) skew(10deg, 5deg) rotate(360deg);
+        transform: translateY(-70vh) scale(1.5) skew(10deg, 5deg) rotate(360deg);
+    }
+
+}
+.bublle-cir__1 {
+    background: url("../img/drop.png") no-repeat center;
+    width: 50px;
+    height: 46px;
+    bottom: 15%;
+    left: 4%;
+
+    /*
+    bottom: 156px;
+    left: 15px;
+     */
+    */
+
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+
+    -webkit-animation: bublle-float 4s linear infinite;
+    animation: bublle-float 4s linear infinite;
+
+
+}
+.bublle-cir__2 {
+    background: url("../img/drop-1.png") no-repeat center;
+    width: 69px;
+    height: 65px;
+
+    right: 4%;
+    top: 24%;
+
+    /*
+    right: 86px;
+    top: 153px;
+     */
+
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+
+    -webkit-animation: bublle-float 5s linear infinite;
+    animation: bublle-float 5s linear infinite;
+
+
+}
+.bublle-cir__3 {
+    background: url("../img/droplet-1.png") no-repeat center;
+    width: 103px;
+    height: 109px;
+
+    right: 22%;
+    bottom: 13%;
+
+    /*
+    right: 328px;
+    bottom: 145px;
+    */
+
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+
+    -webkit-animation: bublle-float 3s linear infinite;
+    animation: bublle-float 3s linear infinite;
+
+
+}
+.bublle-cir__4 {
+    background: url("../img/droplet-2.png") no-repeat center;
+    width: 276px;
+    height: 269px;
+
+    right: 0;
+    bottom: -20%;
+
+    /*
+    right: -58px;
+    bottom: -124px;
+    */
+
+    -webkit-transition: all 5.5s ease;
+    -o-transition: all 5.5s ease;
+    transition: all 5.5s ease;
+
+    -webkit-animation: bublle-float 4s linear infinite;
+    animation: bublle-float 4s linear infinite;
+
+
+}
+.bublle-cir__5 {}
+
+.cookie-zum {
+    background: #C9EDE8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px;
+    font-size: 14px;
+    max-width: 726px;
+    position: fixed;
+    bottom: 15px;
+    left: 15px;
+    z-index: 10;
+}
+.cookie-zum.closed {
+    display: none;
+}
+.cookie-zum__thumb {
+    min-width: 45px;
+    margin: 0 15px 0 0;
+}
+.cookie-zum__thumb img {}
+.cookie-zum__descript {
+    padding: 0 110px 0 0;
+}
+.cookie-zum__descript a {
+    color: #0D2330;
+    text-decoration: underline;
+}
+.cookie-zum__link {
+    font-size: 15px;
+    font-family: 'GTWalsheimProMedium';
+    font-weight: 500;
+    font-style: normal;
+    color: #0D2330;
+    position: absolute;
+    right: 15px;
+    padding: 0 0 0 30px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    text-decoration: none;
+    bottom: 15px;
+}
+.cookie-zum__link:before {
+    content: "";
+    display: block;
+    background: url("../img/arrow.svg") no-repeat center;
+    width: 21px;
+    height: 10px;
+    position: absolute;
+    left: 0;
+    top: 5px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.cookie-zum__link:hover {}
+.cookie-zum__link:hover:before {
+    left: 5px;
+}
+.cookie-close {
+    display: block;
+    background: url("../img/close.svg") no-repeat center;
+    width: 8px;
+    height: 8px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+.cookie-close:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.wasser-aroma {
+    position: relative;
+    background: url("../img/wasser-aroma.svg") no-repeat center bottom;
+    background: #F4F8FF;
+}
+.wasser-aromatis {
+    position: relative;
+    padding: 141px 0 160px 0;
+}
+.wasser-aroma .container {
+}
+.wasser-container {
+    max-width: 818px;
+    float: right;
+    margin: 163px 62px 0 0;
+    margin: 0 62px 0 0;
+    position: relative;
+    z-index: 11;
+}
+.wasser-title {
+    font-family: 'FarnhamDisplay';
+    font-size: 3rem;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 1.25;
+}
+.wasser-title__italic {
+    font-family: 'FarnhamDisplay LightItal';
+    font-weight: 300;
+    font-style: italic;
+}
+.wasser-title span {}
+.wasser-description {
+    margin: 30px 0 0 3px;
+    line-height: 1.75;
+}
+.wasser-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 12px;
+    text-align: center;
+    margin: 67px 0 0 276px;
+}
+.wasser-list li {
+    width: 100px;
+}
+.wasser-list li:nth-child(1) {
+    -webkit-animation: wasser-float 6s ease-in-out infinite;
+    animation: wasser-float 6s ease-in-out infinite;
+}
+.wasser-list li:nth-child(2) {
+    margin: 44px 42px 0 49px;
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-animation: wasser-float 7s ease-in-out infinite;
+    animation: wasser-float 7s ease-in-out infinite;
+}
+.wasser-list li:nth-child(3) {
+    margin: 21px 0 0 0;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-animation: wasser-float 5s ease-in-out infinite;
+    animation: wasser-float 5s ease-in-out infinite;
+}
+.wasser-item__ico {
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wasser-item__ico img {
+    object-fit: none;
+}
+.wasser-item__text {
+    line-height: 1.1666;
+}
+@-webkit-keyframes wasser-float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-20px);
+        transform: translatey(-20px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+@keyframes wasser-float {
+    0% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+    50% {
+        -webkit-transform: translatey(-20px);
+        transform: translatey(-20px);
+    }
+    100% {
+        -webkit-transform: translatey(0px);
+        transform: translatey(0px);
+    }
+}
+
+.wasser-rasp__1 {
+    background: url("../img/grapefruit-1.png") no-repeat center;
+    width: 516px;
+    height: 503px;
+    position: absolute;
+    left: -43px;
+    top: -29px;
+
+    /*left: -45px;*/
+    /*top: -170px;*/
+}
+.wasser-rasp__2 {
+    background: url("../img/raspberry.png") no-repeat center;
+    width: 230px;
+    height: 224px;
+    position: absolute;
+    right: -53px;
+    top: 29px;
+
+    /*top: -110px;*/
+}
+.wasser-rasp__3 {
+    background: url("../img/blueberry.png") no-repeat center;
+    width: 218px;
+    height: 147px;
+    position: absolute;
+    bottom: -58px;
+    left: -25px;
+
+    /*bottom: -205px;*/
+}
+.wasser-rasp__4 {
+    background: url("../img/pineapple.png") no-repeat center;
+    width: 651px;
+    height: 414px;
+    position: absolute;
+    bottom: -145px;
+    left: 280px;
+}
+
+.wasser-banner {
+    background: #C9EDE8;
+    padding: 6px 0;
+    z-index: 5;
+    position: relative;
+
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 77px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    z-index: 10;
+}
+.wasser-banner.fadeout {
+    left: -100%;
+}
+.wasser-banner .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    padding: 0;
+}
+.wasser-banner__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 19px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'FarnhamDisplay';
+    font-weight: 300;
+    line-height: 1.4782;
+}
+.wasser-banner__item span {
+    font-size: 25px;
+    font-family: 'GTWalsheimProMedium';
+    margin: 0 5px 0 0;
+}
+.wasser-banner__item img {
+    margin: 0 5px 0 0;
+}
+.wasser-banner__item b {
+    font-family: 'FarnhamDisplay';
+    font-size: 19px;
+    font-weight: 500;
+}
+
+.wasserhahn {}
+.wasserhahn .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.wasserhahn-auf {
+    width: 580px;
+    margin: 159px 0 0 0px;
+    position: relative;
+    left: 180px;
+    z-index: 3;
+}
+.schritt {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: 'GTWalsheimProMedium';
+}
+.wasserhahn .wasser-title {
+    margin: 11px 0 0 0;
+}
+.schritt-description {
+    margin: 37px 0 0 0;
+    line-height: 1.75;
+}
+.wasserhahn-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 12px;
+    text-align: center;
+    margin: 68px 0 0 6px;
+    justify-content: space-between;
+}
+.wasserhahn-list li {
+    width: 100px;
+}
+.wasserhahn-list li:nth-child(1) {
+    margin: 40px 0 0 0;
+    -webkit-animation: wasser-float 6s ease-in-out infinite;
+    animation: wasser-float 6s ease-in-out infinite;
+}
+.wasserhahn-list li:nth-child(2) {
+    /*margin: 0 0 0 47px;*/
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-animation: wasser-float 7s ease-in-out infinite;
+    animation: wasser-float 7s ease-in-out infinite;
+}
+.wasserhahn-list li:nth-child(3) {
+    /*margin: 47px 0 0 68px;*/
+    margin: 47px 0 0 0;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-animation: wasser-float 5s ease-in-out infinite;
+    animation: wasser-float 5s ease-in-out infinite;
+}
+.wasserhahn-list li:nth-child(4) {
+    /*margin: 0px 0 0 54px;*/
+    -webkit-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+    -webkit-animation: wasser-float 6s ease-in-out infinite;
+    animation: wasser-float 6s ease-in-out infinite;
+}
+.wasserhahn-item__ico {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+.wasserhahn-item__ico img {
+    object-fit: none;
+    width: 100%;
+    height: 100%;
+}
+.wasserhahn-item__text {
+    margin: 5px 0 0 0;
+    line-height: 1.1666;
+}
+.wasserhahn-buttle {
+    position: relative;
+}
+.wasserhahn-buttle:after {
+    content: "";
+    display: block;
+    background: url("../img/wasserhahn_bg.svg") no-repeat center;
+    width: 973px;
+    height: 833px;
+    position: absolute;
+    top: -51px;
+    left: -170px;
+}
+.wasserhahn-buttle__img {
+    margin: -34px 0 0 8px;
+    position: relative;
+    z-index: 2;
+}
+
+.fruchtepuree {}
+.fruchtepuree .container {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.fruchtepuree-buttle {
+    position: relative;
+    margin: 0 -215px 0 0;
+}
+.fruchtepuree-buttle:after {
+    content: "";
+    display: block;
+    background: url("../img/fruchtepuree_bg.svg") no-repeat center;
+    width: 973px;
+    height: 833px;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+.fruchtepuree-buttle__img {
+    margin: 116px 0 0 19px;
+    width: 846px;
+    position: relative;
+    z-index: 2;
+}
+.fruchtepuree-buttle__img img {}
+.fruchtepuree-rein {
+    width: 630px;
+    margin: 165px 0 0 0;
+    position: relative;
+    z-index: 5;
+}
+.fruchtepuree-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 12px;
+    text-align: center;
+    margin: 59px 0 0 22px;
+    justify-content: space-between;
+}
+.fruchtepuree-list li {
+    width: 100px;
+}
+.fruchtepuree-list li:nth-child(1) {
+    margin: 12px 0 0 0;
+    -webkit-animation: wasser-float 6s ease-in-out infinite;
+    animation: wasser-float 6s ease-in-out infinite;
+}
+.fruchtepuree-list li:nth-child(2) {
+    /*margin: 0 0 0 77px;*/
+    -webkit-transition-delay: .5s;
+    -o-transition-delay: .5s;
+    transition-delay: .5s;
+    -webkit-animation: wasser-float 4s ease-in-out infinite;
+    animation: wasser-float 4s ease-in-out infinite;
+}
+.fruchtepuree-list li:nth-child(3) {
+    /*margin: 25px 0 0 65px;*/
+    margin: 25px 0 0 0;
+    -webkit-transition-delay: 1s;
+    -o-transition-delay: 1s;
+    transition-delay: 1s;
+    -webkit-animation: wasser-float 3s ease-in-out infinite;
+    animation: wasser-float 3s ease-in-out infinite;
+}
+.fruchtepuree-list li:nth-child(4) {
+    /*margin: 11px 0 0 40px;*/
+    margin: 11px 0 0 0;
+    -webkit-transition-delay: 1.5s;
+    -o-transition-delay: 1.5s;
+    transition-delay: 1.5s;
+    -webkit-animation: wasser-float 7s ease-in-out infinite;
+    animation: wasser-float 7s ease-in-out infinite;}
+
+.fruchtepuree-item__ico {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.fruchtepuree-item__text {
+    margin: 5px 0 0 0;
+    line-height: 1.1666;
+}
+.kleiner-banner {
+    background: url("../img/kleiner-bg.svg") no-repeat center;
+    font-size: 29px;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    font-family: 'FarnhamDisplay';
+    position: absolute;
+    width: 265px;
+    height: 166px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    font-weight: 500;
+    right: -265px;
+    bottom: 85px;
+    -webkit-transform: rotate(-5deg);
+    -ms-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.kleiner-banner.active {
+    right: 63px;
+    opacity: 1;
+}
+.kleiner-banner span {
+    font-family: 'FarnhamDisplay LightItal';
+}
+.kleiner-banner__text {
+    -webkit-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+    line-height: 1.03448;
+    text-align: center;
+}
+
+.zoomshop {}
+/* slider amy */
+#ct_amy_main1 {
+    height: 800px;
+}
+/*end slider amy */
+.zumshop-slider {}
+.zumshop-slick {
+    overflow: hidden;
+}
+.zumshop-slick__item {
+    text-align: center;
+    border-radius: 18px;
+    overflow: hidden;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 25px;
+}
+.zumshop-slick__item:hover {
+}
+.zumshop-slick__thumb {
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    -webkit-transform: rotate(0);
+    -ms-transform: rotate(0);
+    transform: rotate(0);
+}
+.zumshop-slick__thumb img {}
+.zumshop-hidden {
+    max-height: 0;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.5s;
+}
+.bespoke-active .zumshop-hidden {
+    max-height: 10em;
+}
+.zumshop-slick__name {
+    font-family: 'FarnhamDisplay';
+    font-weight: 300;
+    font-size: 23px;
+    line-height: 1.30434;
+}
+.zumshop-slick__tag {
+    font-size: 18px;
+    line-height: 1.444;
+}
+.zumshop-slick__buyer {
+    font-size: 18px;
+    font-family: 'GTWalsheimProMedium';
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    margin: 25px 0 0 0;
+    opacity: 0;
+    position: relative;
+    transition: 0.3s;
+}
+.zumshop-slick__item:hover .zumshop-slick__buyer {
+    opacity: 1;
+}
+.zumshop-slick__price {
+
+}
+.zumshop-slick__numform {}
+.zumshop-slick__button {}
+.button-inline {}
+.button-center {
+    text-align: center;
+}
+/*slick-js*/
+.slick-slide.slick-active.prevdiv {
+    -webkit-transform: rotate(-20deg);
+    -ms-transform: rotate(-20deg);
+    transform: rotate(-20deg);
+}
+.slick-slide.slick-active.prevdiv .zumshop-slick__thumb {
+    /*transform: rotate(-20deg);*/
+    /*transform: matrix(0.95, -0.33, 0.33, 0.95, 0, 0);*/
+}
+.slick-slide.slick-active.nextdiv {
+    -webkit-transform: rotate(20deg);
+    -ms-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+.slick-slide.slick-active.nextdiv .zumshop-slick__thumb {
+    /*transform: rotate(20deg);*/
+    /*transform: matrix(0.95, 0.33, -0.33, 0.95, 0, 0);*/
+}
+
+
+.button-link {
+    display: inline-block;
+    cursor: pointer;
+    text-decoration: none;
+    border: none;
+    font-family: 'GTWalsheimProBold';
+    color: #0D2330;
+    font-size: 20px;
+    border: 1px solid #0D2330;
+    border-radius: 6px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 15px 35px;
+
+    background: transparent;
+    background-image: url("../img/nav-bg-fill-blue.png");
+    background-repeat: repeat-x;
+    background-position: 0 -100%;
+    -webkit-transition: 1.5s ease;
+    -o-transition: 1.5s ease;
+    transition: 1.5s ease;
+    /*filter: hue-rotate(360deg);*/
+}
+.button-link:hover {
+    /*background: #0D2330;*/
+    color: #fff;
+    background-position: 500% 100%;
+}
+.button-hover {
+    background: #0D2330;
+    color: #fff;
+}
+.button-hover:hover {
+    background: #fff;
+    color: #0D2330;
+}
+
+.aktion-box {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    z-index: -1;
+    opacity: 0;
+    transition: 0.3s;
+    transform: scale(0);
+}
+.aktion-box.active {
+    position: fixed;
+}
+.aktion-box.closed {
+    display: none;
+}
+.aktion-ten {
+    background: #E27291;
+    -webkit-box-shadow: 0px 15px 15px #0000000B;
+    box-shadow: 0px 15px 15px #0000000B;
+    border-radius: 11px;
+    height: 194px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    position: relative;
+    max-width: 1232px;
+    margin: 0 auto;
+    padding: 0 0 20px 0;
+}
+.aktion-close {
+    display: block;
+    background: url("../img/close.svg") no-repeat center;
+    width: 16px;
+    height: 16px;
+    border: none;
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-size: contain;
+}
+.aktion-close:hover {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+.aktion-img {
+    min-width: 320px;
+    margin: -95px 27px 0 0;
+}
+.aktion-img img {}
+.aktion-info {
+    width: 100%;
+}
+.aktion-title {
+    font-size: 90px;
+    font-family: 'FarnhamDisplay';
+    line-height: 0.7777;
+    letter-spacing: -1.08px;
+    margin: -35px 0 0 0;
+}
+.aktion-gratis {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 27px 0 0 -1px;
+    line-height: 1.75;
+    letter-spacing: -0.1px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.aktion-description {
+    max-width: 560px;
+    font-family: 'GTWalsheimProMedium';
+}
+.aktion-description b {
+    font-family: 'GTWalsheimProBold';
+    font-size: 14px;
+}
+.aktion-button {
+    margin: 14px 52px 0 0;
+}
+
+.ein-gutschein {
+    background: url("../img/ein-bg-top.jpg") no-repeat center top, url("../img/ein-bg-bottom.jpg") no-repeat center bottom, #CAEEE8;
+    /*background: url("../img/ein-bg-top.png") no-repeat center top, url("../img/ein-bg-bottom.png") no-repeat center bottom;*/
+    position: relative;
+    padding: 105px 0 179px 0;
+    background-size: contain;
+    overflow: hidden;
+}
+.ein-gutschein__container {
+    background: #CAEEE8;
+    position: relative;
+    overflow: hidden;
+}
+.ein-gutschein .container {
+    max-width: 1226px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.gutschein {
+    position: relative;
+    z-index: 5;
+    max-width: 600px;
+}
+.gutschein-title {
+    font-family: 'FarnhamDisplay';
+    font-weight: 500;
+    font-size: 80px;
+    max-width: 470px;
+    line-height: 1.1875;
+}
+.gutschein-description {
+    line-height: 1.75;
+    margin: 30px 0 70px 0;
+}
+.gutschein .button-link {
+    padding: 16px 14px;
+}
+.gutschein-img {
+    position: absolute;
+    overflow: hidden;
+    height: 420px;
+    top: 20px;
+}
+#gutschein-lottie {}
+
+.dein-trink {
+    padding: 303px 0 90px 0;
+}
+.trink-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+}
+.trink-img {
+    width: 500px;
+    text-align: center;
+}
+.trink-info {
+    width: 715px;
+    margin: 34px 0 0 94px;
+}
+.trink-box .wasser-title {
+    font-size: 60px;
+    line-height: 1.25;
+}
+.trink-description {
+    line-height: 1.75;
+    margin: 28px 0 73px 0;
+}
+
+.entweder-man {
+    padding: 77px 0;
+}
+.entweder-man .wasser-title {
+    max-width: 590px;
+    margin: 0 auto;
+    text-align: center;
+    letter-spacing: -0.72px;
+}
+.entweder-description {
+    max-width: 590px;
+    text-align: center;
+    margin: 23px auto 0;
+}
+.entweder-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 160px 0 0 0;
+}
+.entweder-item {
+    text-align: center;
+    width: 285px;
+    margin: 0 11px 0;
+    border-radius: 11px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.entweder-item:hover {
+    background: #F4F8FF;
+    cursor: none;
+}
+.entweder-cursor {
+    background: url("../img/more-ico.svg") no-repeat center;
+    width: 71px;
+    height: 71px;
+    position: fixed;
+    z-index: 999;
+    display: none;
+    transition: transform 0.2s;
+    margin: -35px 0 0 -35px;
+}
+
+.entweder-item:after {
+    /*content: "";*/
+    display: block;
+    background: url("../img/more-ico.svg") no-repeat center;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -35px;
+    opacity: 0;
+    z-index: -2;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.entweder-item:hover:after {
+    opacity: 1;
+    z-index: 5;
+}
+.entweder-item__img {
+    position: relative;
+    margin: -50px 0 0 0;
+}
+.entweder-item__img img {}
+.entweder-item__img.person {}
+.entweder-item__img.person:before {
+    content: "";
+    display: block;
+
+}
+.entweder-perso {
+    background: url("../img/person_attr1.png") no-repeat center;
+    width: 90px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    left: 15px;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'GTWalsheimProMedium';
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.1666;
+    background-size: cover;
+}
+.entweder-perso__text {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    position: relative;
+    top: -5px;
+}
+.entweder-item__name {
+    font-size: 23px;
+    font-family: 'FarnhamDisplay';
+    margin: 13px 0;
+}
+.entweder-item__tag {
+    font-size: 16px;
+}
+.entweder-item_buyer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    opacity: 0;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.entweder-item:hover .entweder-item_buyer {
+    opacity: 1;
+}
+.ntweder-item__price {
+    font-size: 18px;
+    font-family: 'GTWalsheimProMedium';
+}
+.ntweder-item__numform {
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+}
+.ntweder-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.ntweder-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    background: none;
+    cursor: pointer;
+}
+.ntweder-minus,
+.ntweder-pluse {
+    border: none;
+    background: none;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+}
+.ntweder-minus:hover {}
+.ntweder-input {
+    border: none;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    background: none;
+}
+.ntweder-input:focus {}
+.ntweder-pluse {}
+.ntweder-pluse:hover {}
+.ntweder-button {
+    margin: 0 0 0 15px;
+}
+.ntweder-submit {
+    display: block;
+    background: url("../img/cart-ico-1.svg") no-repeat center;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 24px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+}
+.ntweder-submit:hover {
+    background: url("../img/cart-ico-3.svg") no-repeat center;
+}
+
+.das-prinzip {
+    padding: 140px 0 94px 0;
+}
+.das-prinzip .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.prinzip-info {
+    min-width: 470px;
+    max-width: 470px;
+    margin: 26px 15px 0 175px;
+    position: relative;
+    z-index: 5;
+}
+.das-prinzip .wasser-title {
+    letter-spacing: -0.72px;
+}
+.prinzip-description {
+    line-height: 1.75;
+    margin: 30px 0 71px 0;
+}
+.prinzip-foto {
+    position: relative;
+    min-height: 660px;
+}
+.prinzip-foto img {
+    max-width: initial;
+    position: absolute;
+}
+.prinzip-foto img:nth-child(1) {
+    z-index: 1;
+    left: 0px;
+    top: -30px;
+}
+.prinzip-foto img:nth-child(2) {
+    z-index: 2;
+    left: -95px;
+    top: 10px;
+}
+.prinzip-foto img:nth-child(3) {
+    z-index: 3;
+    left: -35px;
+    top: 15px;
+}
+.prinzip-foto img:nth-child(4) {
+    z-index: 4;
+    left: -55px;
+    top: 5px;
+}
+
+.wie-schmeckt {
+    padding: 93px 0;
+}
+.wie-schmeckt .container {
+    max-width: 1226px;
+}
+.wie-title {
+    font-size: 60px;
+    line-height: 1.25;
+}
+.wie-review {
+    margin: 110px 0 0 0;
+}
+.wie-list {}
+
+/* swiper slider*/
+.wie-list .swiper-slide {
+    width: 360px;
+}
+.wie-list .swiper-slide:nth-child(2n) {
+    margin: 120px 0 0 0;
+}
+
+/* slick slider*/
+.wie-list .slick-slide:nth-child(2n) {
+    margin: 120px 0 0 0;
+}
+.wie-item {
+    width: 360px;
+    background: #CAEEE8;
+    border-radius: 20px 20px 0px 20px;
+    font-family: 'GTWalsheimProRegular';
+    padding: 20px;
+    margin: 0 25px;
+}
+.wie-enter {
+    min-height: 175px;
+}
+.wie-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 30px 0 0 0;
+}
+.wie-info {}
+.wie-info__name {
+    font-family: 'FarnhamDisplay';
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 1.0909;
+    letter-spacing: -0.22px;
+}
+.wie-info__tag {
+    font-size: 16px;
+    font-family: 'GTWalsheimProRegular';
+}
+.wie-rating {
+    position: relative;
+}
+.wie-rating__star {
+    position: relative;
+    background: url("../img/star-line-1.svg") repeat-x left;
+    width: 96px;
+    height: 15px;
+    margin: 4px 0 0 0;
+}
+.wie-rating__num {
+    background: url("../img/star-line-2.svg") repeat-x left;
+    height: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wie-navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    margin: 100px 0 0 0;
+}
+.wie-prev,
+.wie-next {
+    cursor: pointer;
+    border: none;
+    width: 16px;
+    height: 16px;
+}
+.wie-prev {
+    background: url("../img/wie-navigation.svg") no-repeat left;
+}
+.wie-prev:hover {}
+.wie-next {
+    background: url("../img/wie-navigation.svg") no-repeat right;
+}
+.wie-next:hover {}
+.wie-dots {}
+.wie-dots .slick-dots {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.wie-dots .slick-dots li {
+    margin: 0 5px;
+}
+.wie-dots .slick-dots li.slick-active {}
+.wie-dots .slick-dots li button {
+    width: 6px;
+    height: 6px;
+    background: none;
+    border: 1px solid #0D2330;
+    cursor: pointer;
+    text-indent: -9999px;
+    display: block;
+    border-radius: 100%;
+}
+.wie-dots .slick-dots li.slick-active button {
+    background: #0D2330;
+}
+.wie-dots .slick-dots li button:hover {}
+
+.dem-guten {
+    padding: 78px 0;
+}
+.dem-guten .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.guten-foto {
+    margin: 0 -178px 0 -125px;
+}
+.guten-foto img {}
+.guten-folgen {
+    width: 460px;
+    margin: 186px 0 0 0;
+}
+.dem-guten .wasser-title {
+    font-size: 80px;
+    line-height: 1.0875;
+    letter-spacing: -0.96px;
+}
+.gutten-newslatter {
+    margin: 150px 0 0 0px;
+}
+.gutten-newstlatter__title {
+    font-size: 16px;
+    font-family: 'GTWalsheimProRegular';
+}
+.gutten-newslatter__form {
+    position: relative;
+    display: block;
+    margin: 8px 7px 0 0;
+}
+.gutten-input {
+    border: 1px solid #0D2330;
+    border-radius: 6px;
+    font-family: 'GTWalsheimProRegular';
+    font-size: 16px;
+    width: 100%;
+    padding: 19px 140px 19px 15px;
+    background: none;
+}
+.gutten-input:focus {}
+.gutten-button {
+    font-family: 'GTWalsheimProBold';
+    font-size: 16px;
+    border: none;
+    background: none;
+    position: absolute;
+    top: 21px;
+    right: 9px;
+    display: block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 0 35px 0 0;
+}
+.gutten-button:after {
+    content: "";
+    display: inline-block;
+    background: url("../img/form.svg") no-repeat center right;
+    width: 21px;
+    height: 21px;
+    position: absolute;
+    right: 13px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.gutten-button:hover {}
+.gutten-button:hover:after {
+    right: 0;
+}
+.gutten-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 32px 0 0 0;
+}
+.gutten-social li {
+    margin: 0 37px 0 0;
+}
+.gutten-social li:last-child {
+    margin: 0;
+}
+.gutten-social li a {
+
+}
+.gutten-social li a:hover {}
+.social-facebook {
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    background: url("../img/facebook.svg") no-repeat center;
+}
+.social-facebook:hover {
+    background: url("../img/facebook-h.svg") no-repeat center;
+}
+.social-instagram {
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    background: url("../img/instagram.svg") no-repeat center;
+}
+.social-instagram:hover {
+    background: url("../img/instagram-h.svg") no-repeat center;
+}
+.social-linkedin {
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    display: block;
+    text-decoration: none;
+    width: 35px;
+    height: 35px;
+    background: url("../img/linkedin.svg") no-repeat center;
+}
+.social-linkedin:hover {
+    background: url("../img/linkedin-h.svg") no-repeat center;
+}
+
+.keine-banner {
+    background: #F5F8FD;
+    padding: 6px 0;
+    z-index: 5;
+    position: relative;
+    margin: 133px 0 0 0;
+}
+.keine-banner .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+}
+
+.footer {
+    color: #fff;
+    background: #0D2330;
+    padding: 76px 0;
+}
+.footer .container {
+    max-width: 1226px;
+}
+.footer a {
+    color: #fff;
+}
+.footer-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.footer-col {}
+.footer-col__1 {}
+.footer-col__2 {
+    margin: 0 0 0 -60px;
+}
+.footer-col__3 {
+    min-width: 387px;
+}
+.footer-title {
+    font-size: 32px;
+    margin: 0 0 20px 0;
+}
+.footer-nav {}
+.footer-nav li {
+    margin: 0 0 10px 0;
+}
+.footer-nav li:last-child {
+    margin: 0;
+}
+.footer-nav li a {
+    position: relative;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-nav li a:hover {}
+.footer-nav li a:after {
+    content: "";
+    display: block;
+    background: url("../img/hover-menu.svg") repeat-x center bottom;
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-nav li a:hover:after {
+    width: 100%;
+}
+.footer-kontakt {
+    margin: 0 0 17px 0;
+}
+.footer-kontakt__link {
+    font-size: 15px;
+    display: inline-block;
+    position: relative;
+    font-family: 'GTWalsheimProMedium';
+    padding: 0 31px 0 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-kontakt__link:after {
+    content: "";
+    display: block;
+    background: url("../img/link-arr.svg") no-repeat center;
+    width: 21px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 6px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-kontakt__link:hover:after {
+    right: -5px;
+}
+.footer-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 15px 0 0 0;
+}
+.footer-social li {
+    margin: 0px 27px 0 0;
+}
+.footer-social li:last-child {
+    margin: 0;
+}
+.footer-social .social-facebook {
+    background: url("../img/facebook-w.svg") no-repeat center;
+}
+.footer-social .social-instagram {
+    background: url("../img/instagram-w.svg") no-repeat center;
+}
+.footer-social .social-linkedin {
+    background: url("../img/linkedin-w.svg") no-repeat center;
+}
+.footer-newslatter {
+    margin: 45px 0 0 0;
+}
+.footer-newslatter .gutten-newstlatter__title {
+    font-size: 22px;
+    font-family: 'GTWalsheimProLight';
+}
+.footer-newslatter .gutten-newslatter__form {
+    margin: 15px 11px 0 0;
+}
+.footer-newslatter .gutten-input {
+    font-size: 16px;
+    font-family: 'GTWalsheimProMedium';
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
+    border-radius: 0;
+    padding: 0 0 5px 0;
+}
+.footer-newslatter .gutten-input:focus {}
+.footer-newslatter .gutten-input::-webkit-input-placeholder {
+    color: #fff;
+}
+.footer-newslatter .gutten-input::-moz-placeholder {
+    color: #fff;
+}
+.footer-newslatter .gutten-input:-ms-input-placeholder {
+    color: #fff;
+}
+.footer-newslatter .gutten-input::-ms-input-placeholder {
+    color: #fff;
+}
+.footer-newslatter .gutten-input::placeholder {
+    color: #fff;
+}
+.footer-newslatter .gutten-button {
+    font-size: 16px;
+    font-family: 'GTWalsheimProMedium';
+    color: #fff;
+    top: 4px;
+    right: 0;
+}
+.footer-newslatter .gutten-button:hover {}
+.footer-newslatter .gutten-button:after {
+    background: url("../img/form-arr.svg") no-repeat center right;
+}
+
+.footer-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 71px 0 0 0;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer-link {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.footer-link li {
+    margin: 0 26px 0 0;
+}
+.footer-link li:last-child {
+    margin: 0;
+}
+.footer-link li a {
+    display: inline-block;
+    font-size: 15px;
+    font-family: 'GTWalsheimProRegular';
+    letter-spacing: 1.2px;
+    position: relative;
+}
+.footer-link li a:after {
+    content: "";
+    display: block;
+    background: url("../img/hover-menu.svg") repeat-x center bottom;
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.footer-link li a:hover:after {
+    width: 100%;
+}
+.footer-paysystem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.footer-paysystem li {
+    margin: 0 30px 0 0;
+}
+.footer-paysystem li:last-child {
+    margin: 0;
+}
+
+/* start css page-shop.php */
+body.page-shop {}
+body.page-shop .header {
+    background: #fff;
+}
+body.page-shop .header .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+.shop-nav {
+    display: none;
+}
+.shop-nav li {
+    margin: 0 20px;
+}
+.shop-nav li a {
+    font-family: 'GTWalsheimProMedium';
+    position: relative;
+    display: inline-block;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    color: #0D2330;
+    font-size: 14px;
+    letter-spacing: 1.4px;
+}
+.shop-nav li a:hover {
+    text-decoration: none;
+}
+.shop-nav li a:after {
+    content: "";
+    display: block;
+    background: url(../img/menu2.svg) repeat-x center bottom;
+    height: 4px;
+    position: absolute;
+    bottom: -5px;
+    width: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.shop-nav li a:hover:after {
+    width: 100%;
+}
+body.page-shop .shop-nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+body.page-shop .header-shop {
+    display: none;
+}
+
+.kostliche-aromen {
+    padding: 77px 0 135px 0;
+}
+.kostliche-aromen .container {
+    max-width: 725px;
+}
+.kostliche-aromen .wasser-title {
+    text-align: center;
+}
+.aromen-description {
+    text-align: center;
+    margin: 30px 0 0 0;
+    line-height: 1.75;
+}
+.aromen-slider {
+    margin: 130px 0 0 0;
+}
+.aromen-list {}
+.aromen-list .swiper-slide {
+    width: 285px;
+    padding: 70px 0 0 0;
+}
+.aromen-list li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.aromen-list.slick-initialized .slick-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 50px 0;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.aromen-item {
+    text-align: center;
+    width: 285px;
+    border-radius: 11px;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    margin: 0 25px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+.aromen-item:hover {
+
+}
+.aromen-item:after {
+    /* content: ""; */
+    display: block;
+    background: url("../img/more-ico.svg") no-repeat center;
+    width: 71px;
+    height: 71px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -75px 0 0 -35px;
+    opacity: 0;
+    z-index: -2;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.aromen-item:hover:after {
+    opacity: 1;
+    z-index: 5;
+}
+.aromen-item__img {
+    position: relative;
+    margin: -50px 0 0 0;
+}
+.aromen-item__img img {
+    display: inline-block;
+}
+.aromen-item__img.person {}
+.aromen-item__img.person:before {
+    content: "";
+    display: block;
+
+}
+.aromen-perso {
+    background: url("../img/person_attr1.png") no-repeat center;
+    width: 90px;
+    height: 78px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-family: 'GTWalsheimProMedium';
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.1666;
+    background-size: cover;
+}
+.aromen-perso__text {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    position: relative;
+    top: -5px;
+}
+.aromen-item__name {
+    font-size: 23px;
+    font-family: 'FarnhamDisplay';
+    margin: 13px 0;
+}
+.aromen-item__tag {
+    font-size: 16px;
+}
+.aromen-item_buyer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 15px;
+    opacity: 1;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.aromen-item:hover .aromen-item_buyer {
+    opacity: 1;
+}
+.aromen-item__price {
+    font-size: 18px;
+    font-family: 'GTWalsheimProMedium';
+}
+.aromen-item__numform {
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+}
+.aromen-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.aromen-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    background: none;
+    cursor: pointer;
+}
+.aromen-minus,
+.aromen-pluse {
+    border: none;
+    background: none;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    width: 25px;
+    height: 25px;
+}
+.aromen-minus:hover {}
+.aromen-input {
+    border: none;
+    font-family: 'GTWalsheimProMedium';
+    font-size: 18px;
+    width: 30px;
+    text-align: center;
+    background: none;
+}
+.aromen-input:focus {}
+.aromen-pluse {}
+.aromen-pluse:hover {}
+.aromen-button {
+    margin: 0 0 0 15px;
+}
+.aromen-submit {
+    display: block;
+    background: url("../img/cart-ico-1.svg") no-repeat center;
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    width: 24px;
+    height: 27px;
+    cursor: pointer;
+    border: none;
+}
+.aromen-submit:hover {
+    background: url("../img/cart-ico-3.svg") no-repeat center;
+}
+
+.hast-gutschein {
+    background: none;
+    position: relative;
+    padding: 0;
+    background-size: contain;
+    overflow: hidden;
+    z-index: 3;
+}
+.hast-gutschein:after {
+    content: "";
+    display: block;
+    background: url("../img/ein-bg-bottom.png") no-repeat center bottom;
+    width: 100%;
+    min-height: 137px;
+    background-size: cover;
+}
+.hast-gutschein  .ein-gutschein__container {
+    padding: 104px 0;
+}
+
+.das-probierpaket {
+    margin: -137px 0 0 0;
+    position: relative;
+    z-index: 2;
+}
+.das-probierpaket:after {
+    content: "";
+    display: block;
+    background: url("../img/probierpaket-bottom.png") no-repeat center bottom;
+    width: 100%;
+    min-height: 111px;
+    background-size: cover;
+}
+.das-probierpaket__container {
+    background: #FEF1F1;
+    padding: 350px 0 115px 0;
+}
+.das-probierpaket .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 887px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.probierpaket-info {
+    max-width: 475px;
+}
+.probierpaket-title {}
+.probierpaket-description {
+    margin: 30px 0 80px 0;
+}
+.probierpaket-sale {}
+
+.entweder-flotte {
+    margin: -111px 0 0 0;
+    padding: 0;
+}
+.entweder-flotte:after {
+    content: "";
+    display: block;
+    background: url("../img/flotte-bottom.png") no-repeat center bottom;
+    width: 100%;
+    min-height: 112px;
+    background-size: cover;
+}
+.entweder-flotte__container {
+    background: #FBFDFF;
+    padding: 245px 0 50px 0;
+}
+
+.als-geschenk {
+    padding: 120px 0;
+}
+.als-geschenk .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 1066px;
+}
+.geschenk-info {}
+.geschenk-title {}
+.geschenk-description {}
+.geschenk-sale {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+
+.das-kostlichste {
+    padding: 120px 0 90px 0;
+}
+/* end css page-shop.php */
+
+/* start css page-abo.php */
+.abo-konfigurieren {
+    padding: 80px 0;
+}
+.abo-konfigurieren .container {
+    max-width: 600px;
+}
+.abo-description {
+    text-align: center;
+}
+.konfigurieren-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+}
+.konfigurieren-item {
+    text-align: center;
+    width: 100px;
+    margin: 50px 0 0 0;
+}
+.konfigurieren-item__thumb {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    height: 40px;
+}
+.konfigurieren-item__name {
+    font-size: 13px;
+    font-family: 'GTWalsheimProMedium';
+    line-height: 1.15384;
+}
+.konfigurieren-step {
+    margin: 60px 0 0 0;
+}
+.konfigurieren-stepline {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    position: relative;
+    counter-reset: li;
+}
+.konfigurieren-stepline::after {
+    content: "";
+    display: block;
+    height: 2px;
+    background: #0D2330;
+    position: absolute;
+    width: 98%;
+    top: 18px;
+    margin: 0 5px;
+}
+.konfigurieren-stepline li {}
+.konfigurieren-stepline li a {
+    display: block;
+    position: relative;
+    font-family: 'GTWalsheimProRegular';
+    font-size: 13px;
+    color: #959FA4;
+}
+.konfigurieren-stepline li a:before {
+    content: counter(li);
+    counter-increment: li;
+    font-family: 'GTWalsheimProBold';
+    font-size: 15px;
+    color: #798D93;
+    background: url("../img/step-bg-h.png") no-repeat center;
+    width: 39px;
+    height: 38px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    position: relative;
+    z-index: 2;
+}
+.konfigurieren-stepline li a:hover:before,
+.konfigurieren-stepline li.current a:before {
+    background: url("../img/step-bg.png") no-repeat center;
+    color: #0D2330;
+}
+.konfigurieren-stepline li a:hover,
+.konfigurieren-stepline li.active a {
+    color: #0D2330;
+}
+.konfigurieren-stepline li a span {
+    position: absolute;
+}
+.konfigurieren-stepline li:nth-child(1) a span {
+    left: 0;
+}
+.konfigurieren-stepline li:nth-child(2) a span {
+    -webkit-transform: translateX(-25%);
+    -ms-transform: translateX(-25%);
+    transform: translateX(-25%);
+}
+.konfigurieren-stepline li:nth-child(3) a span {
+    right: 0;
+}
+.konfigurieren-tab {
+    display: none;
+    margin: 65px 0 0 0;
+}
+.konfigurieren-tab.visible {
+    display: block;
+}
+.konfigurieren-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+}
+.konfigurieren-stepcol {
+
+    width: 285px;
+    border-radius: 6px;
+    background: #F4F8FF;
+    padding: 15px;
+}
+.konfigurieren-stepitem {}
+.konfigurieren-step__title {
+    font-size: 16px;
+    font-family: 'GTWalsheimProBold';
+}
+.konfigurieren-stepform {}
+.konfigurieren-steptype {
+    margin: 25px 0 0 0;
+    font-family: 'GTWalsheimProRegular';
+    font-size: 17px;
+}
+.konfigurieren-steptype label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.konfigurieren-steptype input[type=radio] {
+    display: none;
+}
+.konfigurieren-steptype label:before {
+    content: "";
+    width: 21px;
+    height: 21px;
+    border-radius: 100%;
+    border: 1px solid #0D2330;
+    background: #F4F8FF;
+    display: inline-block;
+    margin: 0 20px 0 0;
+}
+.konfigurieren-steptype input[type=radio]:checked + label:before {
+    background: #0D2330;
+    -webkit-box-shadow: inset 0 0 0 5px #F4F8FF;
+    box-shadow: inset 0 0 0 5px #F4F8FF;
+}
+.konfigurieren-steptype input.allewoche {
+    display: inline-block;
+    width: 30px;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #0D2330;
+    text-align: center;
+    font-family: 'GTWalsheimProRegular';
+    font-size: 17px;
+}
+.allewoche-max {
+    font-size: 10px;
+    color: #E27291;
+    font-family: 'GTWalsheimProMedium';
+    line-height: 1.4;
+    margin: 0 0 0 42px;
+    position: relative;
+    opacity: 0;
+    z-index: -1;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.allewoche-max.active {
+    opacity: 1;
+    z-index: 1;
+}
+.konfigurieren-stepinfo {
+    font-size: 14px;
+    margin: 25px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.konfigurieren-stepinfo:before {
+    content: "";
+    display: block;
+    background: url("../img/info-ico.svg") no-repeat center;
+    min-width: 22px;
+    height: 23px;
+    margin: 0 20px 0 0;
+}
+.konfigurieren-trinkst {
+    background: #E2729157;
+    border-radius: 6px;
+    font-family: 'GTWalsheimProRegular';
+    font-size: 16px;
+    text-align: center;
+    padding: 10px 40px;
+    line-height: 1.375;
+    margin: 22px 0 0 0;
+}
+.konfigurieren-trinkst i {
+    font-family: 'FarnhamDisplay LightItal';
+    font-weight: 300;
+    font-style: italic;
+}
+.konfigurieren-button {
+    margin: 35px 0 0 0;
+    text-align: center;
+}
+.konfigurieren-button button.button-link {
+    font-family: 'GTWalsheimProMedium';
+    padding: 15px 56px;
+}
+
+/* STEP 2 */
+.bittle-wahle {
+    border-radius: 6px;
+    background: #F4F8FF;
+    padding: 20px 40px;
+}
+.bittle-wahle__title {
+    font-family: 'GTWalsheimProBold';
+    font-size: 16px;
+    line-height: 1.5;
+}
+.bittle-wahle__title span.current {}
+.bittle-wahle__title span.current.active {
+    display: none;
+}
+.bittle-wahle__title span.current-none {
+    display: none;
+}
+.bittle-wahle__title span.current-none.active {
+    display: block;
+}
+.warenkorb-statusbar {
+    margin: 20px 0;
+}
+.warenkorb-status {
+    width: 100%;
+    height: 1px;
+    background: #818E97;
+    position: relative;
+}
+.warenkorb-status .warenkorb-status__ico {
+    height: 3px;
+    position: absolute;
+    background: #0D2330;
+    width: 0;
+    top: -1px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.warenkorb-status .warenkorb-status__ico:before {
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background: #0D2330;
+    position: absolute;
+    right: -5px;
+    top: -4px;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.warenkorb-status__info {
+    font-family: 'GTWalsheimProBold';
+    font-size: 9px;
+    -webkit-transform: translate(-3%, 3px);
+    -ms-transform: translate(-3%, 3px);
+    transform: translate(-3%, 3px);
+    position: relative;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    left: 0;
+}
+.warenkorb-market {}
+.warenkorb-short {
+    margin: 0 -40px;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+    padding: 10px 40px;
+}
+.warenkorb-short:hover {
+    background: #C9EDE8;
+}
+.warenkorb-thumb {
+    position: relative;
+}
+.warenkorb-thumb img {
+    position: relative;
+    z-index: 2;
+}
+.warenkorb-limited {
+    background: url("../img/warenkorb_bg.svg") no-repeat center;
+    width: 48px;
+    height: 44px;
+    position: absolute;
+    top: -7px;
+    left: -37px;
+    color: #fff;
+    font-size: 8px;
+    text-transform: uppercase;
+    font-family: 'GTWalsheimProMedium';
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    line-height: 1.125;
+    background-size: cover;
+}
+.warenkorb-limited__text {
+    -webkit-transform: rotate(-10deg);
+    -ms-transform: rotate(-10deg);
+    transform: rotate(-10deg);
+    position: relative;
+    top: 0;
+}
+.warenkorb-info {
+    width: 100%;
+    padding: 0 20px;
+}
+.warenkorb-name {
+    font-family: 'FarnhamDisplay';
+    font-weight: 300;
+    font-size: 24px;
+}
+.warenkorb-price {}
+.warenkorb-current {}
+.warenkorb-type {
+    display: flex;
+    align-items: center;
+}
+.warenkorb-minus {}
+.warenkorb-pluse {}
+.warenkorb-minus,
+.warenkorb-pluse {
+    border: none;
+    background: none;
+    font-family: 'GTWalsheimProMedium';
+    font-weight: 500;
+    font-size: 20px;
+    width: 25px;
+    height: 25px;
+}
+.warenkorb-input {
+    font-size: 20px;
+    font-family: 'GTWalsheimProMedium';
+    font-weight: 500;
+    border: none;
+    background: none;
+    width: 30px;
+    text-align: center;
+}
+
+/* end css page-abo.php */
+
+/* custom cursor */
+.cursor {
+    position: fixed;
+    left: 0;
+    top: 0;
+    pointer-events: none;
+}
+.cursor--small {
+    width: 5px;
+    height: 5px;
+    left: -2.5px;
+    top: -2.5px;
+    border-radius: 50%;
+    z-index: 11000;
+    background: #000;
+}
+.cursor--canvas {
+    width: 100vw;
+    height: 100vh;
+    z-index: 12000;
+}

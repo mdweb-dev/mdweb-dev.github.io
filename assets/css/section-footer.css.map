@@ -1,0 +1,1 @@
+{"version":3,"file":"./assets/css/section-footer.css","mappings":";;;AAAA;EACE,gBAAgB;EAChB,sBAAsB;EACtB,WAAW;EAHb;IAKI,mBAAmB","sources":["webpack:///./src/styles/section/footer.scss"],"sourcesContent":[".footer {\r\n  padding: r(30) 0;\r\n  background-color: #000;\r\n  color: #fff;\r\n  a {\r\n    color: currentColor;\r\n  }\r\n}"],"names":[],"sourceRoot":""}

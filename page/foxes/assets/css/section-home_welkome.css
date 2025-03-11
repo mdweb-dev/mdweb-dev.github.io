@@ -1,0 +1,29 @@
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/home_welkome.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/*images*/
+.home-welcome {
+  padding-top: 3.125rem;
+  padding-bottom: 5rem; }
+  .home-welcome__title {
+    color: var(--color-orange); }
+  .home-welcome__description {
+    width: 100%;
+    max-width: 52.75rem;
+    margin-inline: auto;
+    margin-top: 3.125rem;
+    text-align: center; }
+  .home-welcome__group {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2.5rem;
+    margin-top: 6.25rem; }
+    @media only screen and (max-width: 767px) {
+      .home-welcome__group {
+        grid-template-columns: repeat(2, 1fr); } }
+    @media only screen and (max-width: 575px) {
+      .home-welcome__group {
+        grid-template-columns: 1fr; } }
+
+
+/*# sourceMappingURL=section-home_welkome.css.map*/

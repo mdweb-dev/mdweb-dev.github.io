@@ -1,0 +1,64 @@
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/element/welcome_card.scss ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/*images*/
+.welcome-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  color: #fff;
+  background-color: var(--color-orange); }
+  .welcome-card__media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 0; }
+    .welcome-card__media picture {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+      font-size: 0; }
+    .welcome-card__media img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+      object-fit: cover;
+      aspect-ratio: 1.598 / 1; }
+  .welcome-card__main {
+    -webkit-box-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    grid-gap: 1.875rem;
+    padding: 1.5625rem;
+    padding-bottom: 2.1875rem;
+    text-align: center; }
+    @media only screen and (max-width: 767px) {
+      .welcome-card__main {
+        padding: 2.1875rem 0.9375rem; } }
+  .welcome-card__title {
+    font-size: 2.375rem;
+    font-weight: bold;
+    color: currentColor; }
+    @media only screen and (max-width: 767px) {
+      .welcome-card__title {
+        font-size: 1.625rem; } }
+  .welcome-card__action {
+    margin-top: auto; }
+    .welcome-card__action .button-global:hover {
+      color: var(--color-text);
+      background-color: var(--color-white); }
+
+
+/*# sourceMappingURL=element-welcome_card.css.map*/

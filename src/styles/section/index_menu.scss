@@ -1,0 +1,26 @@
+@import "../common/mixins";
+@import "../common/variable";
+
+.index-menu {
+  padding: r(70) 0;
+  &__contaoner {}
+  &__group {
+    display: grid;
+    grid-gap: r(15);
+  }
+  &__row {}
+  &__title {
+    padding: r(5) r(15);
+    background: #000;
+    color: #fff;
+    font-size: r(20);
+    font-weight: bold;
+  }
+  ul {
+    padding-left: r(40);
+    margin-top: r(15);
+    li {
+      a {}
+    }
+  }
+}

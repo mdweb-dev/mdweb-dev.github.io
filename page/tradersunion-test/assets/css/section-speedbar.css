@@ -1,0 +1,96 @@
+/*!*****************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[0].use[1]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[0].use[2]!./node_modules/postcss-loader/dist/cjs.js!./src/styles/section/speedbar.scss ***!
+  \*****************************************************************************************************************************************************************************************************************************/
+/*images*/
+.speedbar {
+  padding: 10px 0; }
+  .speedbar__container {
+    position: relative; }
+    .speedbar__container:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 2;
+      display: block;
+      height: 100%;
+      width: 40px;
+      opacity: 0;
+      background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(50%, rgba(255, 255, 255, 0.75)), to(#fff));
+      background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.75) 50%, #fff 100%);
+      -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      transform: rotate(180deg); }
+      @media only screen and (max-width: 575px) {
+        .speedbar__container:before {
+          opacity: 1; } }
+  .speedbar__wrapper {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    grid-gap: 10px;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    -webkit-transition: .3s;
+    transition: .3s; }
+    @media only screen and (max-width: 575px) {
+      .speedbar__wrapper {
+        margin-left: -15px; } }
+  .speedbar__disclosure {
+    font-size: 12px;
+    text-align: right;
+    color: var(--color-gray);
+    white-space: nowrap; }
+    .speedbar__disclosure a {
+      color: currentColor; }
+
+.breadcrumbs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  grid-gap: 7px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  list-style: none; }
+  .breadcrumbs li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    grid-gap: 7px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 12px;
+    white-space: nowrap; }
+    .breadcrumbs li a {
+      color: var(--color-gray); }
+      @media (hover: hover) {
+        .breadcrumbs li a:hover {
+          color: #000; } }
+      @media (hover: none) {
+        .breadcrumbs li a:active {
+          color: #000; } }
+    .breadcrumbs li:after {
+      content: '';
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      width: 6px;
+      height: 6px;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNCIgaGVpZ2h0PSI2IiB2aWV3Qm94PSIwIDAgNCA2IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMC4wODA2MTY3IDAuODU5MTE5Qy0wLjAyNjg3MiAwLjc1MTYzIC0wLjAyNjg3MiAwLjU3NzM1NiAwLjA4MDYxNjcgMC40Njk4NjhMMC40Njk4NjggMC4wODA2MTY1QzAuNTc3MzU3IC0wLjAyNjg3MjIgMC43NTE2MyAtMC4wMjY4NzIyIDAuODU5MTE5IDAuMDgwNjE2NUwzLjU4Mzg4IDIuODA1MzdDMy42OTEzNyAyLjkxMjg2IDMuNjkxMzcgMy4wODcxNCAzLjU4Mzg4IDMuMTk0NjNMMy4xOTQ2MyAzLjU4Mzg4QzMuMDg3MTQgMy42OTEzNyAyLjkxMjg2IDMuNjkxMzcgMi44MDUzNyAzLjU4Mzg4TDAuMDgwNjE2NyAwLjg1OTExOVoiIGZpbGw9IiM0OTRCNDkiLz4KPHBhdGggZD0iTTIuODA1MzcgMi40MTYxMkMyLjkxMjg2IDIuMzA4NjMgMy4wODcxNCAyLjMwODYzIDMuMTk0NjMgMi40MTYxMkwzLjU4Mzg4IDIuODA1MzdDMy42OTEzNyAyLjkxMjg2IDMuNjkxMzcgMy4wODcxNCAzLjU4Mzg4IDMuMTk0NjNMMC44NTkxMTkgNS45MTkzOEMwLjc1MTYzIDYuMDI2ODcgMC41NzczNTYgNi4wMjY4NyAwLjQ2OTg2OCA1LjkxOTM4TDAuMDgwNjE2NSA1LjUzMDEzQy0wLjAyNjg3MjIgNS40MjI2NCAtMC4wMjY4NzIyIDUuMjQ4MzcgMC4wODA2MTY1IDUuMTQwODhMMi44MDUzNyAyLjQxNjEyWiIgZmlsbD0iIzQ5NEI0OSIvPgo8L3N2Zz4K);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
+    .breadcrumbs li:last-child:after {
+      display: none; }
+
+
+/*# sourceMappingURL=section-speedbar.css.map*/

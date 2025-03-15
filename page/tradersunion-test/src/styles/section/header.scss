@@ -1,0 +1,155 @@
+@import "../common/mixins";
+@import "../common/variable";
+
+.header {
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.15);
+  background: #fff;
+  @include max-laptop {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__top {}
+  &__bottom {}
+}
+
+.header-top {
+  min-height: 74px;
+  padding: 16px 0;
+  background-color: #f9f9f9;
+  @include max-laptop {
+    background-color: transparent;
+    flex: 1;
+  }
+  @include max-tablet {
+    min-height: 42px;
+    padding: 6px 0;
+  }
+  &__container {}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-gap: 10px;
+  }
+  &__slogan {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+    flex: 1;
+    @include max-tablet {
+      display: none;
+    }
+  }
+  &__logo {
+    @include max-laptop {
+      flex: 1;
+      z-index: 100;
+    }
+    picture {
+      width: 100%;
+      max-width: 130px;
+      @include max-tablet {
+        max-width: 91px;
+      }
+    }
+    img {
+      width: 100%;
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: flex-end;
+    grid-gap: 10px;
+    @include max-laptop {
+      display: none;
+    }
+  }
+}
+
+.header-bottom {
+  padding-block: 5px;
+  &__container {}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__nav {
+    @include max-laptop {
+      position: fixed;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #fff;
+      z-index: 99;
+      padding: 90px 16px 16px;
+      width: 100%;
+      max-width: 300px;
+      transition: .3s;
+      transform: translateX(100%);
+    }
+    @include max-tablet {
+      padding-top: 58px;
+    }
+    .menu-open & {
+      transform: translateY(0);
+    }
+  }
+  &__action {
+    display: flex;
+    align-items: center;
+    grid-gap: 20px;
+    button, a {}
+    @include max-laptop {
+      z-index: 100;
+    }
+  }
+}
+
+.header-nav {
+  @include max-laptop {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-top {
+    &__action {
+      margin-top: auto;
+      display: flex;
+      flex: none;
+      justify-content: center;
+      a, button {
+        flex: 1;
+      }
+    }
+  }
+  ul {
+    display: flex;
+    grid-gap: r(30);
+    list-style: none;
+    @include max-laptop {
+      flex-direction: column;
+      grid-gap: 16px;
+      flex: 1;
+      overflow-y: auto;
+    }
+    li {
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 171%;
+        text-transform: uppercase;
+        text-align: center;
+        color: #000;
+        white-space: nowrap;
+        @include hover {
+          color: $colorGreen;
+        }
+      }
+    }
+  }
+}

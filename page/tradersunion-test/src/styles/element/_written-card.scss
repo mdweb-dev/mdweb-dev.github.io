@@ -1,0 +1,43 @@
+.written-card {
+  display: flex;
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 8px;
+  }
+  &__label {
+    display: flex;
+    align-items: center;
+    grid-column-gap: 8px;
+    font-size: 12px;
+    color: $colorGray;
+    svg {
+      width: 16px;
+      height: 16px;
+      stroke: currentColor;
+      fill: transparent;
+      flex-shrink: 0;
+      @include max-tablet {
+        display: none;
+      }
+    }
+  }
+  &__name {}
+  &:after {
+    content: '';
+    display: none;
+    width: 60px;
+    height: 45px;
+    border-right: 1px solid #e1e1e1;
+    transform: translateX(-50%);
+    pointer-events: none;
+    @include max-tablet {
+      width: 32px;
+    }
+  }
+  &:not(:last-child) {
+    &:after {
+      display: block;
+    }
+  }
+}

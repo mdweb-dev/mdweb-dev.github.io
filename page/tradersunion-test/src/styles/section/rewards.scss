@@ -1,0 +1,22 @@
+@import "../common/mixins";
+@import "../common/variable";
+
+.rewards {
+  padding-block: 16px;
+  background-color: #f9f9f9;
+  &__container {}
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    grid-column-gap: 16px;
+  }
+  &__group {
+    display: flex;
+  }
+  &__social {
+    margin-left: auto;
+    @include max-tablet {
+      display: none;
+    }
+  }
+}

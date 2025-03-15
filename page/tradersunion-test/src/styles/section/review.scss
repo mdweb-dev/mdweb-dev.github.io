@@ -1,0 +1,78 @@
+@import "../common/mixins";
+@import "../common/variable";
+
+.review {
+  padding: 20px 0 30px;
+  &__container {}
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    grid-gap: 20px;
+  }
+  &__headline {
+    display: flex;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+    @include max-laptop {
+      grid-column-gap: 0;
+    }
+  }
+  &__brand {
+    width: 100%;
+    max-width: 210px;
+    @include max-laptop {
+      width: 65%;
+      padding-right: 15px;
+      max-width: none;
+    }
+  }
+  &__title {
+    flex: 1;
+    @include max-laptop {
+      order: 3;
+      width: 100%;
+    }
+  }
+  &__verified {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    @include max-laptop {
+      width: 35%;
+      align-self: stretch;
+    }
+  }
+  &__detail {
+    position: relative;
+    display: flex;
+    grid-gap: 30px;
+  }
+  &__account {
+    position: sticky;
+    top: 15px;
+    width: 100%;
+    max-width: 210px;
+    @include max-tablet {
+      display: none;
+    }
+  }
+  &__risk {
+    margin-top: 10px;
+    font-size: 12px;
+    line-height: 110%;
+    text-align: center;
+    color: $colorGray;
+  }
+  &__group {
+    flex: 1;
+    display: grid;
+    //grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    @include max-small-portrait {
+      grid-template-columns: 1fr;
+    }
+  }
+}
